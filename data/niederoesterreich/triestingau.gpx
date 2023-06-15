@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gpx version="1.1" creator="outdooractive - http://www.outdooractive.com" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" xmlns:oa="http://www.outdooractive.com/GPX/Extensions/1">
+  <metadata>
+    <name>Triestingau-Radweg</name>
+    <author>
+      <name>Wienerwald Tourismus GmbH - Wienerwald</name>
+    </author>
+    <link href="https://www.outdooractive.com/r/1366729"/>
+    <time>2023-05-30T23:05:45.794</time>
+    <extensions>
+      <oa:oaCategory>longDistanceCyclingTrack</oa:oaCategory>
+    </extensions>
+  </metadata>
+  <wpt lon="16.44462" lat="48.082179">
+    <ele>171</ele>
+    <name>Himberg Bf</name>
+    <desc>&lt;a href=&quot;http://www.noevog.at/de/default.asp?tt=NOEVOG_R119&quot;&gt;Details&lt;/a&gt;</desc>
+    <src>outdooractive.21430.1703330</src>
+    <type>Bus</type>
+  </wpt>
+  <wpt lon="16.3047" lat="47.9584">
+    <ele>225</ele>
+    <name>Kletterpark Tattendorf</name>
+    <desc><![CDATA[64 Hindernisse in 6 Parcours von Bambiniparcours, über Blau, Rot bis Schwarz stehen zur Verfügung und garantieren sowohl Spass als auch Abwechslung für die ganze Familie. / Sowohl Sicherheit als auch Teamgeist / Wir fühlen uns den höchsten Ausrüstungs-Standards verpflichtet, darum durchlaufen alle unsere Kletterpark-Guides spezielle Ausbildungen. Das heisst unser Kletterpark entspricht den höchsten Anforderungen an Sicherheit und Trainings unserer Guides. Aus diesem Grund sind wir der einzige Kletterpark der den neuesten Vorschriften für den Besuch von Kletterparks für Schulen entspricht. Denn das fühlt sich gut an! / Was gibt es noch zu entdecken im Dumba Park? / Dino Tattendorf - 35 lebensgroße Dinosaurier / Der Parcours ist mit Buggies zu schaffen, aber es geht über Hackschnitzel und ein wenig bergauf und bergab. Anderenfalls bitte Tragetuch oder Rückentrage für Kleinkinder mitbringen. / Der Dino-Parcours ist rollstuhltauglich, wir empfehlen einen Begleiter. / Hunde müssen in Begleitung außerhalb des Parks warten. / Schmetterlingwelt Tattendorf ist ein Glashaus, in dem zwischen tropischen Pflanzen besondere Schmetterlinge frei herum fliegen und von Besuchern hautnah bewundert werden können. / Freut euch auf EIS VOM HARRER im Foyer der Schmetterlingwelt. / Danach sorgt das angrenzende Rahofer Bräu für Speis und Trank (zu den Öffnungszeiten). Mit regionalen Schmankerln, moderner Küche sowie hausgebrautem Bier in modern-ländlichem Ambiente. Kurzum geeignet für jeden Anlass. / Außerdem besteht am Gelände die Möglichkeit eine verrückte Tour mit unserem Bierbike zu machen. / Wenn es ein ausgedehnter Ausflug in die Region werden soll, warten überdies unsere Schlaffässer® darauf, Ihr Naturerlebnis abzurunden. Schlafen Sie in unseren bestens ausgestatteten und ebenfalls komfortablen Holzfässern mitten in der Natur. Auch für Familien mit Kindern eine tolle Erfahrung, die in Erinnerung bleibt!]]></desc>
+    <src>datenmanager_imx.21430.12769</src>
+    <link href="http://www.kletterpark-tattendorf.at"/>
+    <type>Klettern</type>
+  </wpt>
+  <wpt lon="16.3025" lat="47.9552">
+    <ele>227</ele>
+    <name>Weingut Familie Auer</name>
+    <desc><![CDATA[Ob bei der Dekoration, der Glaskultur oder den Speisen: Familie Auer legt bei ihrem im Zentrum von Tattendorf liegenden Heurigen viel Wert auf Stil.  / Dazu gehören zum Beispiel auch die Kunstausstellungen, die auf der Galerie stattfinden.  / Das gesamte Weinsortiment des Bio-Betriebs, das wie in der Thermenregion üblich aus einer ausgewogenen Kombination aus Rot- und Weißweinen besteht, kann glasweise verkostet werden.  / Das Heurigenbuffet führt Leckerbissen wie Hirschschinken, Flugentenbrust, Roastbeef, Spanferkelschinken und saisonale Spezialitäten wie Spargel im Frühling und Wild im Herbst.  / Auf Anfrage werden auch gerne Kellerführungen und Weinverkostungen durchgeführt.]]></desc>
+    <src>datenmanager_imx.21430.12269</src>
+    <link href="http://www.weingutauer.at"/>
+    <type>Heurige</type>
+  </wpt>
+  <wpt lon="16.2154" lat="47.9275">
+    <ele>266</ele>
+    <name>Hotel Leobersdorfer Hof</name>
+    <desc><![CDATA[Mitten in der Thermenregion Wienerwald, am Ausgang des Triestingtals liegt die aufblühende, von Weinbau geprägte Marktgemeinde Leobersdorf, nur 15 Kilometer südlich der ehemaligen Kaiserstadt Baden bei Wien. / Mit der Eröffnung des neu renovierten Hotel***-Frühstückspension Leobersdorfer Hof am 02. Juni 2014 bietet Leobersdorf nun auch Gästen aus aller Welt die Gelegenheit einige erholsame Tage in diesem hübschen Ort zu verbringen. / Egal ob geschäftlich oder privat, der Leobersdorfer Hof bietet mit seinen 21 modern eingerichteten Zimmern die perfekte Ausgangslage für Geschäftsreisen, Motorrad- oder Fahrradtouren, eine perfekte Golfrunde auf einem der acht Golfplätze der Golf Arena Baden, eine sportliche Wanderung durch den wunderschönen Wienerwald, eine kleine Shopping Tour im ortseigenen Einkaufszentrum Die Passage oder einen genussvollen Abend bei einem der gemütlichen Leobersdorfer Heurigen. / In der Früh verwöhnt das Team des Leobersdorfer Hofs seine Gäste im hellen und freundlichen Frühstücksraum mit einem ausgiebigen Frühstück, in einem der naheglegenen Heurigenbetriebe verbringen Sie einen gemütlichen Abend bei hervorragendem Leobersdorfer Wein und lokalen Spezilaitäten und Nachtschwärmer finden in der Sky Lounge (1 Gehminute vom Leobersdorfer Hof) ganz bestimmt die passende Abendunterhaltung. / Weitere Leistungen / Gratis Parkplätze direkt beim Hotel / Ruhige Lage, direkt im Zentrum / Gute Anbindung an die öffentliche Infrastruktur (Zug: Bahnhof Leobersdorf, Busverbindungen von und nach Baden) / Cocktails und mehr in der Sky Lounge Leobersdorf / Gemütlicher Abend beim Heurigen in Kooperation mit einem unserer Partner Weinhauer / Seminare, Meetings, Vorträge, Hochzeiten, Weihnachtsfeiern im Eventcenter Leobersdorf / tolle Einkaufsmöglichkeiten im Einkaufscenter "Die Passage" / Bitte beachten Sie unsere Sonderöffnungszeiten! / Konditionen/Extras / Unsere Preise richten sich nach Verfügbarkeit und verstehen sich inklusive MwSt. und Frühstück, jedoch exklusive Nächtigungstaxe von € 0,50 pro Person und Nacht. Alle Zimmer sind Nichtraucherzimmer. / Zusatzbetten (eines oder zwei) sind nur in Zimmern der Kategorie First möglich / Aufpreis pro Erwachsenem oder Kind € 15,00  / Kinder bis zu einem Alter von 3 Jahren schlafen im Leobersdorfer Hof im Bett der Eltern gratis. / Die Mitnahme von Hunden ist kostenpflichtig und nur auf Anfrage gestattet.]]></desc>
+    <src>datenmanager_imx.21430.12740</src>
+    <link href="http://www.hotel-leobersdorferhof.at"/>
+    <type>Hotel</type>
+  </wpt>
+  <wpt lon="16.2153" lat="47.9297">
+    <ele>266</ele>
+    <name>Heuriger Dungel</name>
+    <desc><![CDATA[Unser Heurigen und unser Gastgarten laden zum Genießen ein. Wollen Sie unseren Wein verkosten, dann sind Sie in der Vinothek bestens beraten. / Bei einem guten Glaserl Wein und herrlich selbstgemachten Speisen vergessen sie den Alltagsstress. / Für private Feiern und Firmenfeiern steht Ihnen unser Lokal auch außerhalb der Öffnungszeiten zur Verfügung. Gerne bereiten wir den Rahmen für Ihre Feier, ob Geburtstag, Hochzeit, Jubiläum mit der Firma oder der Familie. / An sonnigen Frühjahr-, Sommer- und Herbsttagen sind unser schattiger Hof und die blumenreiche Terrasse bei den Gästen sehr beliebt. Hier können Sie frische Luft, exzellente Speisen sowie unsere prämierten Weinsorten genießen. Einfach einmal die Seele baumeln lassen! / Erholen Sie sich in angenehmer und entspannender Atmosphäre im Freien und vergessen Sie den Alltag. / Wir freuen uns Sie als Gäste willkommen zu heißen!]]></desc>
+    <src>datenmanager_imx.21430.12387</src>
+    <link href="http://www.dungel.at"/>
+    <type>Heurige</type>
+  </wpt>
+  <wpt lon="16.2111" lat="47.9306">
+    <ele>269</ele>
+    <name>Minigolfclub Leobersdorf</name>
+    <desc><![CDATA[Ein beliebtes Ausflugsziel für alle Generationen. Die Miniaturgolfanlage ist seit mehr als 40 Jahren in Betrieb und besteht aus 19 Eternitbahnen, auf denen Sie Ihr Können unter Beweis stellen dürfen. Zum Verweilen und Relaxen stehen sonnige und überdachte Sitzmöglichkeiten zur Verfügung. / Öffentliche Anreise / Bus/Bahn / Vom Bahnhof Leobersdorf können Sie mit dem Bus 556 bis zur Haltestelle "Leobersdorf Hauptschulplatz" fahren. Von dort sind es 400m bis zum Ausflugsziel. / Taxi / Taxi Lenardin: 02252/75 000 oder 02256/63 700 / Änderungen der öffentlichen Verbindungen vorbehalten / Mit der Niederösterreich-Card / Freier Eintritt inkl. Schläger und Bälle, sooft Sie wollen / Außer Sonderveranstaltungen: Bitte informieren Sie sich direkt beim Ausflugsziel über Details.]]></desc>
+    <src>datenmanager_imx.21430.13249</src>
+    <link href="http://www.bgscleobersdorf.com"/>
+    <type>Ermäßigung</type>
+  </wpt>
+  <wpt lon="16.2089" lat="47.9657">
+    <ele>282</ele>
+    <name>College Garden Hotel</name>
+    <desc><![CDATA[Das College Garden Hotel liegt in einer herrlichen Parkanlage mit Föhrenwaldbestand der Stadt Bad Vöslau in absoluter Ruhelage. Unser Hotel ist mit öffentlichen Verkehrsmitteln oder per Privat-Kfz über die Südautobahn bestens zu erreichen. / In das Zentrum von Wien oder zum Flughafen Schwechat benötigen Sie lediglich etwa 40 Minuten. Unser Hotel-Parkplatz bietet Raum für 60 PKWs oder mehrere Großraumbusse und ist kostenfrei. / In Bad Vöslau finden Sie ein Thermalbad aus der Kaiserzeit, wo heute noch die „Sommerfrische“ zelebriert wird. Heurigen gehören in Bad Vöslau einfach dazu! Verbringen Sie einen gemütlichen Abend bei einem guten Glas Wein. Aber auch die Vöslauer Mineralwasser AG ist immer einen Besuch wert.]]></desc>
+    <src>datenmanager_imx.21430.11917</src>
+    <link href="http://www.college-garden-hotels.com"/>
+    <type>Hotel</type>
+  </wpt>
+  <trk>
+    <name>Triestingau-Radweg</name>
+    <desc><![CDATA[Die Nord-Süd-Achse durchs weite Land - Ein Geheimtipp für Radfahrer ist der bisher fast unentdeckte Triestingau-Radweg. Von Schönau an der Triesting bis Himberg verläuft der Radweg auf der Strecke des Eurovelo 9A. Südlich von Wien bis auf die Höhe von Leobersdorf ist er eine attraktive Alternative zum Thermenradweg.  ]]></desc>
+    <type>longDistanceCyclingTrack</type>
+    <trkseg>
+      <trkpt lat="48.126448" lon="16.466101">
+        <ele>163.69846</ele>
+      </trkpt>
+      <trkpt lat="48.125711" lon="16.467224">
+        <ele>163.63764</ele>
+      </trkpt>
+      <trkpt lat="48.124471" lon="16.468639">
+        <ele>163.31227</ele>
+      </trkpt>
+      <trkpt lat="48.124371" lon="16.468857">
+        <ele>162.20909</ele>
+      </trkpt>
+      <trkpt lat="48.124277" lon="16.469646">
+        <ele>161.01075</ele>
+      </trkpt>
+      <trkpt lat="48.124432" lon="16.469697">
+        <ele>161.38083</ele>
+      </trkpt>
+      <trkpt lat="48.124367" lon="16.469759">
+        <ele>163.06084</ele>
+      </trkpt>
+      <trkpt lat="48.123423" lon="16.469298">
+        <ele>162.93791</ele>
+      </trkpt>
+      <trkpt lat="48.122286" lon="16.468062">
+        <ele>163.14267</ele>
+      </trkpt>
+      <trkpt lat="48.120845" lon="16.467194">
+        <ele>163.18954</ele>
+      </trkpt>
+      <trkpt lat="48.120017" lon="16.466169">
+        <ele>163.57599</ele>
+      </trkpt>
+      <trkpt lat="48.119724" lon="16.465947">
+        <ele>163.18358</ele>
+      </trkpt>
+      <trkpt lat="48.117391" lon="16.465115">
+        <ele>163.46201</ele>
+      </trkpt>
+      <trkpt lat="48.116864" lon="16.464779">
+        <ele>163.64748</ele>
+      </trkpt>
+      <trkpt lat="48.116864" lon="16.464779">
+        <ele>163.64748</ele>
+      </trkpt>
+      <trkpt lat="48.115823" lon="16.463804">
+        <ele>164.2219</ele>
+      </trkpt>
+      <trkpt lat="48.112708" lon="16.459846">
+        <ele>164.22755</ele>
+      </trkpt>
+      <trkpt lat="48.112121" lon="16.4587">
+        <ele>165.17517</ele>
+      </trkpt>
+      <trkpt lat="48.111522" lon="16.457199">
+        <ele>165.52061</ele>
+      </trkpt>
+      <trkpt lat="48.111014" lon="16.456409">
+        <ele>164.42842</ele>
+      </trkpt>
+      <trkpt lat="48.110407" lon="16.455976">
+        <ele>164.54728</ele>
+      </trkpt>
+      <trkpt lat="48.108657" lon="16.455606">
+        <ele>165.64009</ele>
+      </trkpt>
+      <trkpt lat="48.108201" lon="16.454771">
+        <ele>165.3809</ele>
+      </trkpt>
+      <trkpt lat="48.107713" lon="16.453407">
+        <ele>165.47743</ele>
+      </trkpt>
+      <trkpt lat="48.107045" lon="16.45245">
+        <ele>165.39907</ele>
+      </trkpt>
+      <trkpt lat="48.106598" lon="16.451516">
+        <ele>165.51149</ele>
+      </trkpt>
+      <trkpt lat="48.106123" lon="16.451186">
+        <ele>165.69779</ele>
+      </trkpt>
+      <trkpt lat="48.10573" lon="16.450756">
+        <ele>165.50296</ele>
+      </trkpt>
+      <trkpt lat="48.10512" lon="16.449822">
+        <ele>164.99307</ele>
+      </trkpt>
+      <trkpt lat="48.104257" lon="16.449198">
+        <ele>165.91434</ele>
+      </trkpt>
+      <trkpt lat="48.103841" lon="16.448702">
+        <ele>165.8155</ele>
+      </trkpt>
+      <trkpt lat="48.103352" lon="16.447743">
+        <ele>166.22032</ele>
+      </trkpt>
+      <trkpt lat="48.10179" lon="16.44364">
+        <ele>164.69531</ele>
+      </trkpt>
+      <trkpt lat="48.100848" lon="16.44226">
+        <ele>166.80231</ele>
+      </trkpt>
+      <trkpt lat="48.100518" lon="16.442082">
+        <ele>166.94764</ele>
+      </trkpt>
+      <trkpt lat="48.095089" lon="16.441399">
+        <ele>167.79884</ele>
+      </trkpt>
+      <trkpt lat="48.094318" lon="16.441086">
+        <ele>167.62867</ele>
+      </trkpt>
+      <trkpt lat="48.093689" lon="16.440546">
+        <ele>167.40552</ele>
+      </trkpt>
+      <trkpt lat="48.090985" lon="16.437203">
+        <ele>167.72149</ele>
+      </trkpt>
+      <trkpt lat="48.090876" lon="16.437185">
+        <ele>168.90718</ele>
+      </trkpt>
+      <trkpt lat="48.09011" lon="16.436286">
+        <ele>169.34567</ele>
+      </trkpt>
+      <trkpt lat="48.087542" lon="16.432913">
+        <ele>167.06318</ele>
+      </trkpt>
+      <trkpt lat="48.086406" lon="16.431692">
+        <ele>169.27772</ele>
+      </trkpt>
+      <trkpt lat="48.085377" lon="16.430764">
+        <ele>169.53405</ele>
+      </trkpt>
+      <trkpt lat="48.084921" lon="16.430547">
+        <ele>169.79509</ele>
+      </trkpt>
+      <trkpt lat="48.084921" lon="16.430547">
+        <ele>169.79509</ele>
+      </trkpt>
+      <trkpt lat="48.08429" lon="16.430509">
+        <ele>169.43591</ele>
+      </trkpt>
+      <trkpt lat="48.080872" lon="16.431366">
+        <ele>169.74387</ele>
+      </trkpt>
+      <trkpt lat="48.079566" lon="16.431823">
+        <ele>169.93216</ele>
+      </trkpt>
+      <trkpt lat="48.077149" lon="16.433168">
+        <ele>170.73133</ele>
+      </trkpt>
+      <trkpt lat="48.076239" lon="16.433223">
+        <ele>170.50228</ele>
+      </trkpt>
+      <trkpt lat="48.073066" lon="16.432673">
+        <ele>172.41599</ele>
+      </trkpt>
+      <trkpt lat="48.073066" lon="16.432673">
+        <ele>172.41599</ele>
+      </trkpt>
+      <trkpt lat="48.072745" lon="16.431949">
+        <ele>171.60725</ele>
+      </trkpt>
+      <trkpt lat="48.068971" lon="16.424926">
+        <ele>172.71974</ele>
+      </trkpt>
+      <trkpt lat="48.062913" lon="16.417348">
+        <ele>173.58335</ele>
+      </trkpt>
+      <trkpt lat="48.061305" lon="16.415592">
+        <ele>173.97986</ele>
+      </trkpt>
+      <trkpt lat="48.060959" lon="16.415002">
+        <ele>174.01759</ele>
+      </trkpt>
+      <trkpt lat="48.059578" lon="16.411001">
+        <ele>174.48044</ele>
+      </trkpt>
+      <trkpt lat="48.058999" lon="16.408077">
+        <ele>174.89765</ele>
+      </trkpt>
+      <trkpt lat="48.05832" lon="16.405631">
+        <ele>176.17147</ele>
+      </trkpt>
+      <trkpt lat="48.05832" lon="16.405631">
+        <ele>176.17147</ele>
+      </trkpt>
+      <trkpt lat="48.058164" lon="16.404434">
+        <ele>177.81815</ele>
+      </trkpt>
+      <trkpt lat="48.056023" lon="16.403913">
+        <ele>176.83788</ele>
+      </trkpt>
+      <trkpt lat="48.05484" lon="16.403251">
+        <ele>177.29575</ele>
+      </trkpt>
+      <trkpt lat="48.052426" lon="16.401456">
+        <ele>178.05064</ele>
+      </trkpt>
+      <trkpt lat="48.046454" lon="16.396072">
+        <ele>180.52669</ele>
+      </trkpt>
+      <trkpt lat="48.044401" lon="16.394583">
+        <ele>181.15416</ele>
+      </trkpt>
+      <trkpt lat="48.042693" lon="16.392613">
+        <ele>180.89066</ele>
+      </trkpt>
+      <trkpt lat="48.040791" lon="16.390617">
+        <ele>181.75209</ele>
+      </trkpt>
+      <trkpt lat="48.039091" lon="16.387932">
+        <ele>182.31948</ele>
+      </trkpt>
+      <trkpt lat="48.035664" lon="16.385129">
+        <ele>183.51399</ele>
+      </trkpt>
+      <trkpt lat="48.034117" lon="16.38368">
+        <ele>183.67158</ele>
+      </trkpt>
+      <trkpt lat="48.03309" lon="16.382544">
+        <ele>183.48954</ele>
+      </trkpt>
+      <trkpt lat="48.032395" lon="16.384677">
+        <ele>184.82568</ele>
+      </trkpt>
+      <trkpt lat="48.030877" lon="16.384252">
+        <ele>183.77538</ele>
+      </trkpt>
+      <trkpt lat="48.030281" lon="16.383651">
+        <ele>184.65928</ele>
+      </trkpt>
+      <trkpt lat="48.026179" lon="16.381454">
+        <ele>185.20076</ele>
+      </trkpt>
+      <trkpt lat="48.02544" lon="16.379673">
+        <ele>186.50663</ele>
+      </trkpt>
+      <trkpt lat="48.025081" lon="16.379458">
+        <ele>186.41219</ele>
+      </trkpt>
+      <trkpt lat="48.024837" lon="16.379747">
+        <ele>187.04069</ele>
+      </trkpt>
+      <trkpt lat="48.024539" lon="16.379652">
+        <ele>187.28038</ele>
+      </trkpt>
+      <trkpt lat="48.024559" lon="16.37951">
+        <ele>187.04634</ele>
+      </trkpt>
+      <trkpt lat="48.024743" lon="16.379497">
+        <ele>187.3164</ele>
+      </trkpt>
+      <trkpt lat="48.025653" lon="16.378302">
+        <ele>188.11333</ele>
+      </trkpt>
+      <trkpt lat="48.024781" lon="16.376925">
+        <ele>186.7033</ele>
+      </trkpt>
+      <trkpt lat="48.021962" lon="16.37306">
+        <ele>187.93792</ele>
+      </trkpt>
+      <trkpt lat="48.021239" lon="16.372291">
+        <ele>188.16652</ele>
+      </trkpt>
+      <trkpt lat="48.01955" lon="16.371315">
+        <ele>188.82507</ele>
+      </trkpt>
+      <trkpt lat="48.016763" lon="16.369915">
+        <ele>189.23205</ele>
+      </trkpt>
+      <trkpt lat="48.01665" lon="16.369592">
+        <ele>189.97182</ele>
+      </trkpt>
+      <trkpt lat="48.01457" lon="16.366848">
+        <ele>191.09323</ele>
+      </trkpt>
+      <trkpt lat="48.014175" lon="16.366592">
+        <ele>190.88809</ele>
+      </trkpt>
+      <trkpt lat="48.013162" lon="16.366244">
+        <ele>190.7821</ele>
+      </trkpt>
+      <trkpt lat="48.006924" lon="16.357133">
+        <ele>194.38754</ele>
+      </trkpt>
+      <trkpt lat="48.006798" lon="16.357454">
+        <ele>194.60555</ele>
+      </trkpt>
+      <trkpt lat="48.003673" lon="16.353945">
+        <ele>196.18113</ele>
+      </trkpt>
+      <trkpt lat="48.003413" lon="16.354462">
+        <ele>196.68603</ele>
+      </trkpt>
+      <trkpt lat="48.00297" lon="16.354725">
+        <ele>197.27004</ele>
+      </trkpt>
+      <trkpt lat="48.002282" lon="16.353096">
+        <ele>197.2073</ele>
+      </trkpt>
+      <trkpt lat="48.001892" lon="16.352496">
+        <ele>197.53459</ele>
+      </trkpt>
+      <trkpt lat="48.000251" lon="16.350796">
+        <ele>198.33297</ele>
+      </trkpt>
+      <trkpt lat="47.999433" lon="16.350165">
+        <ele>198.52687</ele>
+      </trkpt>
+      <trkpt lat="47.998643" lon="16.349767">
+        <ele>198.98977</ele>
+      </trkpt>
+      <trkpt lat="47.995921" lon="16.348972">
+        <ele>199.89458</ele>
+      </trkpt>
+      <trkpt lat="47.99543" lon="16.348937">
+        <ele>200.05241</ele>
+      </trkpt>
+      <trkpt lat="47.994361" lon="16.349386">
+        <ele>200.28524</ele>
+      </trkpt>
+      <trkpt lat="47.993859" lon="16.349361">
+        <ele>200.25609</ele>
+      </trkpt>
+      <trkpt lat="47.993481" lon="16.349107">
+        <ele>200.72828</ele>
+      </trkpt>
+      <trkpt lat="47.992634" lon="16.348185">
+        <ele>201.31496</ele>
+      </trkpt>
+      <trkpt lat="47.992634" lon="16.348185">
+        <ele>201.31496</ele>
+      </trkpt>
+      <trkpt lat="47.99172" lon="16.347493">
+        <ele>201.46406</ele>
+      </trkpt>
+      <trkpt lat="47.991273" lon="16.346777">
+        <ele>201.47691</ele>
+      </trkpt>
+      <trkpt lat="47.991121" lon="16.346274">
+        <ele>201.53943</ele>
+      </trkpt>
+      <trkpt lat="47.990756" lon="16.3442">
+        <ele>202.5527</ele>
+      </trkpt>
+      <trkpt lat="47.990676" lon="16.342973">
+        <ele>202.49813</ele>
+      </trkpt>
+      <trkpt lat="47.99098" lon="16.341477">
+        <ele>203.37464</ele>
+      </trkpt>
+      <trkpt lat="47.990975" lon="16.34107">
+        <ele>203.2425</ele>
+      </trkpt>
+      <trkpt lat="47.990836" lon="16.340513">
+        <ele>204.26113</ele>
+      </trkpt>
+      <trkpt lat="47.990562" lon="16.340738">
+        <ele>204.34698</ele>
+      </trkpt>
+      <trkpt lat="47.990562" lon="16.340738">
+        <ele>204.34698</ele>
+      </trkpt>
+      <trkpt lat="47.990143" lon="16.340056">
+        <ele>203.5582</ele>
+      </trkpt>
+      <trkpt lat="47.98698" lon="16.337245">
+        <ele>204.93912</ele>
+      </trkpt>
+      <trkpt lat="47.986528" lon="16.336352">
+        <ele>205.13909</ele>
+      </trkpt>
+      <trkpt lat="47.986547" lon="16.336061">
+        <ele>206.10054</ele>
+      </trkpt>
+      <trkpt lat="47.986247" lon="16.334962">
+        <ele>207.35251</ele>
+      </trkpt>
+      <trkpt lat="47.985503" lon="16.33388">
+        <ele>208.0671</ele>
+      </trkpt>
+      <trkpt lat="47.985369" lon="16.33344">
+        <ele>207.01937</ele>
+      </trkpt>
+      <trkpt lat="47.982902" lon="16.330369">
+        <ele>209.21011</ele>
+      </trkpt>
+      <trkpt lat="47.982545" lon="16.329859">
+        <ele>208.93746</ele>
+      </trkpt>
+      <trkpt lat="47.981954" lon="16.328704">
+        <ele>209.23564</ele>
+      </trkpt>
+      <trkpt lat="47.981559" lon="16.328307">
+        <ele>209.33489</ele>
+      </trkpt>
+      <trkpt lat="47.980453" lon="16.327648">
+        <ele>210.04838</ele>
+      </trkpt>
+      <trkpt lat="47.980074" lon="16.327246">
+        <ele>210.80827</ele>
+      </trkpt>
+      <trkpt lat="47.978937" lon="16.324778">
+        <ele>211.88086</ele>
+      </trkpt>
+      <trkpt lat="47.978238" lon="16.323621">
+        <ele>212.5264</ele>
+      </trkpt>
+      <trkpt lat="47.9778" lon="16.323228">
+        <ele>212.79812</ele>
+      </trkpt>
+      <trkpt lat="47.97651" lon="16.322777">
+        <ele>213.16612</ele>
+      </trkpt>
+      <trkpt lat="47.975678" lon="16.321995">
+        <ele>213.63109</ele>
+      </trkpt>
+      <trkpt lat="47.975745" lon="16.321805">
+        <ele>213.55612</ele>
+      </trkpt>
+      <trkpt lat="47.975336" lon="16.321736">
+        <ele>212.97098</ele>
+      </trkpt>
+      <trkpt lat="47.97462" lon="16.322165">
+        <ele>213.18141</ele>
+      </trkpt>
+      <trkpt lat="47.973265" lon="16.32197">
+        <ele>215.00545</ele>
+      </trkpt>
+      <trkpt lat="47.973337" lon="16.321443">
+        <ele>214.79001</ele>
+      </trkpt>
+      <trkpt lat="47.972495" lon="16.321272">
+        <ele>213.90732</ele>
+      </trkpt>
+      <trkpt lat="47.971908" lon="16.320812">
+        <ele>214.17831</ele>
+      </trkpt>
+      <trkpt lat="47.971438" lon="16.319946">
+        <ele>214.66214</ele>
+      </trkpt>
+      <trkpt lat="47.971366" lon="16.319522">
+        <ele>215.02263</ele>
+      </trkpt>
+      <trkpt lat="47.971718" lon="16.317786">
+        <ele>216.09547</ele>
+      </trkpt>
+      <trkpt lat="47.971724" lon="16.317362">
+        <ele>216.47077</ele>
+      </trkpt>
+      <trkpt lat="47.97161" lon="16.316966">
+        <ele>216.25077</ele>
+      </trkpt>
+      <trkpt lat="47.970491" lon="16.3154">
+        <ele>217.18056</ele>
+      </trkpt>
+      <trkpt lat="47.96937" lon="16.314149">
+        <ele>217.80148</ele>
+      </trkpt>
+      <trkpt lat="47.968009" lon="16.312924">
+        <ele>218.31483</ele>
+      </trkpt>
+      <trkpt lat="47.967383" lon="16.312233">
+        <ele>218.41746</ele>
+      </trkpt>
+      <trkpt lat="47.966897" lon="16.311326">
+        <ele>218.74007</ele>
+      </trkpt>
+      <trkpt lat="47.966378" lon="16.31071">
+        <ele>218.67979</ele>
+      </trkpt>
+      <trkpt lat="47.965769" lon="16.310377">
+        <ele>219.81231</ele>
+      </trkpt>
+      <trkpt lat="47.963908" lon="16.310683">
+        <ele>220.7997</ele>
+      </trkpt>
+      <trkpt lat="47.963437" lon="16.310584">
+        <ele>220.92513</ele>
+      </trkpt>
+      <trkpt lat="47.961103" lon="16.309317">
+        <ele>222.1093</ele>
+      </trkpt>
+      <trkpt lat="47.960312" lon="16.30868">
+        <ele>222.84464</ele>
+      </trkpt>
+      <trkpt lat="47.959872" lon="16.308138">
+        <ele>222.5344</ele>
+      </trkpt>
+      <trkpt lat="47.959572" lon="16.30733">
+        <ele>222.94394</ele>
+      </trkpt>
+      <trkpt lat="47.959186" lon="16.305148">
+        <ele>224.85676</ele>
+      </trkpt>
+      <trkpt lat="47.959186" lon="16.305148">
+        <ele>224.85676</ele>
+      </trkpt>
+      <trkpt lat="47.959226" lon="16.304971">
+        <ele>224.70731</ele>
+      </trkpt>
+      <trkpt lat="47.958885" lon="16.304045">
+        <ele>224.30321</ele>
+      </trkpt>
+      <trkpt lat="47.95881" lon="16.303515">
+        <ele>224.37288</ele>
+      </trkpt>
+      <trkpt lat="47.95821" lon="16.302361">
+        <ele>225.4216</ele>
+      </trkpt>
+      <trkpt lat="47.957815" lon="16.301348">
+        <ele>226.22409</ele>
+      </trkpt>
+      <trkpt lat="47.957696" lon="16.299695">
+        <ele>225.90852</ele>
+      </trkpt>
+      <trkpt lat="47.956793" lon="16.297862">
+        <ele>226.57944</ele>
+      </trkpt>
+      <trkpt lat="47.956657" lon="16.29726">
+        <ele>227.17974</ele>
+      </trkpt>
+      <trkpt lat="47.956742" lon="16.296478">
+        <ele>228.25381</ele>
+      </trkpt>
+      <trkpt lat="47.956842" lon="16.296314">
+        <ele>227.91079</ele>
+      </trkpt>
+      <trkpt lat="47.958074" lon="16.295095">
+        <ele>228.69152</ele>
+      </trkpt>
+      <trkpt lat="47.956819" lon="16.292712">
+        <ele>229.11328</ele>
+      </trkpt>
+      <trkpt lat="47.954585" lon="16.288785">
+        <ele>231.0013</ele>
+      </trkpt>
+      <trkpt lat="47.955803" lon="16.287523">
+        <ele>231.55188</ele>
+      </trkpt>
+      <trkpt lat="47.952449" lon="16.281738">
+        <ele>234.04786</ele>
+      </trkpt>
+      <trkpt lat="47.952086" lon="16.280303">
+        <ele>235.0555</ele>
+      </trkpt>
+      <trkpt lat="47.951576" lon="16.279745">
+        <ele>235.57434</ele>
+      </trkpt>
+      <trkpt lat="47.95163" lon="16.279249">
+        <ele>235.09609</ele>
+      </trkpt>
+      <trkpt lat="47.951323" lon="16.277579">
+        <ele>235.65709</ele>
+      </trkpt>
+      <trkpt lat="47.950642" lon="16.27606">
+        <ele>236.18946</ele>
+      </trkpt>
+      <trkpt lat="47.95025" lon="16.275402">
+        <ele>236.47942</ele>
+      </trkpt>
+      <trkpt lat="47.950103" lon="16.275319">
+        <ele>236.70349</ele>
+      </trkpt>
+      <trkpt lat="47.949333" lon="16.275519">
+        <ele>236.67457</ele>
+      </trkpt>
+      <trkpt lat="47.949244" lon="16.274949">
+        <ele>236.21392</ele>
+      </trkpt>
+      <trkpt lat="47.947795" lon="16.270237">
+        <ele>238.80271</ele>
+      </trkpt>
+      <trkpt lat="47.947585" lon="16.269174">
+        <ele>239.29314</ele>
+      </trkpt>
+      <trkpt lat="47.947346" lon="16.266915">
+        <ele>240.04586</ele>
+      </trkpt>
+      <trkpt lat="47.947336" lon="16.265576">
+        <ele>239.58022</ele>
+      </trkpt>
+      <trkpt lat="47.947143" lon="16.263737">
+        <ele>241.11083</ele>
+      </trkpt>
+      <trkpt lat="47.945698" lon="16.265422">
+        <ele>242.24604</ele>
+      </trkpt>
+      <trkpt lat="47.945698" lon="16.265422">
+        <ele>242.24604</ele>
+      </trkpt>
+      <trkpt lat="47.945687" lon="16.265717">
+        <ele>242.12106</ele>
+      </trkpt>
+      <trkpt lat="47.945532" lon="16.265773">
+        <ele>242.21378</ele>
+      </trkpt>
+      <trkpt lat="47.945306" lon="16.266104">
+        <ele>241.97578</ele>
+      </trkpt>
+      <trkpt lat="47.941398" lon="16.261878">
+        <ele>244.85026</ele>
+      </trkpt>
+      <trkpt lat="47.940386" lon="16.263491">
+        <ele>244.99511</ele>
+      </trkpt>
+      <trkpt lat="47.940074" lon="16.262475">
+        <ele>245.52957</ele>
+      </trkpt>
+      <trkpt lat="47.93976" lon="16.261761">
+        <ele>246.0029</ele>
+      </trkpt>
+      <trkpt lat="47.939762" lon="16.261252">
+        <ele>246.39328</ele>
+      </trkpt>
+      <trkpt lat="47.939359" lon="16.261169">
+        <ele>246.33112</ele>
+      </trkpt>
+      <trkpt lat="47.937849" lon="16.259811">
+        <ele>247.08726</ele>
+      </trkpt>
+      <trkpt lat="47.937071" lon="16.258707">
+        <ele>248.07939</ele>
+      </trkpt>
+      <trkpt lat="47.936923" lon="16.258748">
+        <ele>247.79882</ele>
+      </trkpt>
+      <trkpt lat="47.936481" lon="16.258469">
+        <ele>248.01445</ele>
+      </trkpt>
+      <trkpt lat="47.934771" lon="16.255942">
+        <ele>249.51725</ele>
+      </trkpt>
+      <trkpt lat="47.934771" lon="16.255942">
+        <ele>249.51725</ele>
+      </trkpt>
+      <trkpt lat="47.933903" lon="16.255072">
+        <ele>250.40938</ele>
+      </trkpt>
+      <trkpt lat="47.933809" lon="16.254665">
+        <ele>250.44285</ele>
+      </trkpt>
+      <trkpt lat="47.933633" lon="16.254674">
+        <ele>250.60841</ele>
+      </trkpt>
+      <trkpt lat="47.931214" lon="16.250174">
+        <ele>253.40917</ele>
+      </trkpt>
+      <trkpt lat="47.931381" lon="16.248981">
+        <ele>253.68001</ele>
+      </trkpt>
+      <trkpt lat="47.931229" lon="16.247921">
+        <ele>253.52583</ele>
+      </trkpt>
+      <trkpt lat="47.927737" lon="16.240689">
+        <ele>258.2905</ele>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>
