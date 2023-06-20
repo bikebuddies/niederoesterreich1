@@ -41,7 +41,21 @@ let eGrundkarteNiederoesterreich = L.control.layers({
     "Ybbstal-Radweg": themaLayer.ybbstal.addTo(map),
 }).addTo(map);
 
+// Instanz Leaflet MiniMap
+var miniMap = new L.Control.MiniMap(
+    L.tileLayer.provider("BasemapAT.basemap"), {
+    toggleDisplay: true,
+    minimized: true
+}
+).addTo(map);
+
 //Geolocation
+
+map.locate({
+    setView: false, 
+    maxZoom: 8,
+    watch: true,
+});
 
 let circle = L.circle([0, 0], 0).addTo(map);
 let marker = L.marker([0, 0]).addTo(map);
@@ -52,7 +66,7 @@ map.on('locationfound', function (evt) {
     marker.setLatLng(evt.latlng)
     marker.bindTooltip(`You are within ${radius} meters from this point`).openTooltip();
 
-    //L.circle(evt.latlng, radius).addTo(map);
+    L.circle(evt.latlng, radius).addTo(map);
     circle.setLatLng(evt.latlng);
     circle.setRadius(radius);
 }
@@ -61,6 +75,8 @@ map.on('locationfound', function (evt) {
 map.on('locationerror', function (evt) {
     alert(evt.message);
 });
+
+//GPX-Tracks
 
 var gpx = './data/niederoesterreich/kamp_thaya_march.gpx';
 new L.GPX(gpx, {
