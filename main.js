@@ -1,5 +1,3 @@
-/* Code von Vienna mobile Beispiel */
-
 // Zentrum Karte Objekt
 let stpolten = {
     lat: 48.33001133291213,
