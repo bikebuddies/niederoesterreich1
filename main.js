@@ -49,54 +49,97 @@ let eGrundkarteNiederoesterreich = L.control.layers({
 
 
 var gpx = './data/niederoesterreich/kamp_thaya_march.gpx';
-new L.GPX(gpx, { async: true }, {
-    //Polylinien stylen funktioniert noch nicht, marker ausschalten auch nicht
-    polyline_options: [{
-        color: `#76eec6`,
-        opacity: 0.75,
-        weight: 3
-    }, {
-        color: `#76eec6`,
-        opacity: 0.75,
-        weight: 3
-    }]
-}, {
+new L.GPX(gpx, {
+    async: true,
     marker_options: {
         startIconUrl: false,
         endIconUrl: false,
         shadowUrl: false
     }
+    //Polylinien stylen funktioniert noch nicht, marker ausschalten auch nicht
+    // polyline_options: [{
+    //     color: `#76eec6`,
+    //     opacity: 0.75,
+    //     weight: 3
+    // }, {
+    //     color: `#76eec6`,
+    //     opacity: 0.75,
+    //     weight: 3
+    // }]
 }).on('loaded', function (e) {
     //   map.fitBounds(e.target.getBounds());
 }).addTo(themaLayer.kampThayaMarch);
 
 var gpx = './data/niederoesterreich/piestingtal.gpx';
-new L.GPX(gpx, { async: true }).on('loaded', function (e) {
+new L.GPX(gpx, { async: true,
+    marker_options: {
+        startIconUrl: false,
+        endIconUrl: false,
+        shadowUrl: false,
+        wptIconUrls: false
+    }
+ }).on('loaded', function (e) {
     //   map.fitBounds(e.target.getBounds());
 }).addTo(themaLayer.piestingtal);
 
 var gpx = './data/niederoesterreich/thayarunde.gpx';
-new L.GPX(gpx, { async: true }).on('loaded', function (e) {
+new L.GPX(gpx, { async: true,
+    marker_options: {
+        startIconUrl: false,
+        endIconUrl: false,
+        shadowUrl: false,
+        wptIconUrls: false
+    }
+ }).on('loaded', function (e) {
     //   map.fitBounds(e.target.getBounds());
 }).addTo(themaLayer.thayarunde);
 
 var gpx = './data/niederoesterreich/traisentalweg.gpx';
-new L.GPX(gpx, { async: true }).on('loaded', function (e) {
+new L.GPX(gpx, { async: true,
+    marker_options: {
+        startIconUrl: false,
+        endIconUrl: false,
+        shadowUrl: false,
+        wptIconUrls: false
+    }
+ }).on('loaded', function (e) {
     //   map.fitBounds(e.target.getBounds());
 }).addTo(themaLayer.traisental);
 
 var gpx = './data/niederoesterreich/triesting_goelsental.gpx';
-new L.GPX(gpx, { async: true }).on('loaded', function (e) {
+new L.GPX(gpx, { async: true,
+    marker_options: {
+        startIconUrl: false,
+        endIconUrl: false,
+        shadowUrl: false,
+        wptIconUrls: false
+    }
+ }).on('loaded', function (e) {
     //   map.fitBounds(e.target.getBounds());
 }).addTo(themaLayer.triestingGoelsental);
 
 var gpx = './data/niederoesterreich/triestingau.gpx';
-new L.GPX(gpx, { async: true }).on('loaded', function (e) {
+new L.GPX(gpx, { async: true,
+    marker_options: {
+        startIconUrl: false,
+        endIconUrl: false,
+        shadowUrl: false,
+        wptIconUrls: false
+    }
+ }).on('loaded', function (e) {
     //   map.fitBounds(e.target.getBounds());
 }).addTo(themaLayer.triestingau);
 
 var gpx = './data/niederoesterreich/ybbstalradweg.gpx';
-new L.GPX(gpx, { async: true }).on('loaded', function (e) {
+new L.GPX(gpx, {
+    async: true,
+    marker_options: {
+        startIconUrl: false,
+        endIconUrl: false,
+        shadowUrl: false,
+        wptIconUrls: false
+    }
+}).on('loaded', function (e) {
     //   map.fitBounds(e.target.getBounds());
 }).addTo(themaLayer.ybbstal);
 
