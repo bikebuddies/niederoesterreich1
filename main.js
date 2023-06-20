@@ -12,7 +12,7 @@ let map = L.map("map", {
     fullscreenControl: true
 }).setView([
     stpolten.lat, stpolten.lng
-], 7.5);
+], 8.5);
 
 // thematische Layer
 let themaLayer = {
@@ -53,19 +53,17 @@ var miniMap = new L.Control.MiniMap(
 
 map.locate({
     setView: false, 
-    maxZoom: 8,
+    maxZoom: 16,
     watch: true,
 });
 
 let circle = L.circle([0, 0], 0).addTo(map);
-let marker = L.marker([0, 0]).addTo(map);
+
 
 map.on('locationfound', function (evt) {
     let radius = Math.round(evt.accuracy);
 
-    marker.setLatLng(evt.latlng)
-    marker.bindTooltip(`You are within ${radius} meters from this point`).openTooltip();
-
+   
     L.circle(evt.latlng, radius).addTo(map);
     circle.setLatLng(evt.latlng);
     circle.setRadius(radius);
