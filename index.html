@@ -2,6 +2,7 @@
 <html lang="de">
 
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -39,24 +40,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"></script>
 
-     <!-- Leaflet Elevation -->
-     <link rel="stylesheet" href="https://unpkg.com/@raruto/leaflet-elevation/dist/leaflet-elevation.css" />
-     <script src="https://unpkg.com/@raruto/leaflet-elevation/dist/leaflet-elevation.js"></script>
+    <!-- Leaflet Elevation -->
+    <link rel="stylesheet" href="https://unpkg.com/@raruto/leaflet-elevation/dist/leaflet-elevation.css" />
+    <script src="https://unpkg.com/@raruto/leaflet-elevation/dist/leaflet-elevation.js"></script>
 
-     <!-- eigene Stile und Hauptskript -->
+    <!-- eigene Stile und Hauptskript -->
     <link rel="stylesheet" href="main.css">
     <script defer src="main.js"></script>
+
+    <!-- Verlinkung zu Pulldown.js-->
+    <script src="pulldown.js"></script>
+
 </head>
 
 <nav id="pulldown">
     <ul>
-        <li><a href="#">Startseite</a></li>
-        <li><a href="#">Touren</a></li>
+        <li><a href="https://bikebuddies.github.io/start">Startseite</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Touren</a>
+            <ul class="dropdown-menu">
+                <li><a href="https://bikebuddies.github.io/burgenland">Burgenland</a></li>
+                <li><a href="https://bikebuddies.github.io/niederoesterreich1/">Niederösterreich</a></li>
+                <li><a href="https://bikebuddies.github.io/wien">Wien</a></li>
+            </ul>
+        </li>
         <li><a href="#">Verleih</a></li>
         <li><a href="#">Unterkunft</a></li>
         <li><a href="#">Impressum</a></li>
     </ul>
 </nav>
+
 
 <body>
     <main>
@@ -74,7 +87,6 @@
             </p>
             <h3>Karte mit den Top 10 Radrouten Niederösterreichs</h3>
             <select name="pulldown" id="pulldown"></select>
-
             <div id="map"></div>
             <div id="profile"></div>
 
