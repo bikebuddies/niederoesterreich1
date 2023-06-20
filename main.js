@@ -23,9 +23,6 @@ let themaLayer = {
     triestingGoelsental: L.featureGroup(),
     triestingau: L.featureGroup(),
     ybbstal: L.featureGroup(),
-    eurovelo6: L.featureGroup(),
-    eurovelo9: L.featureGroup(),
-    eurovelo13: L.featureGroup(),
 }
 
 // Hintergrundlayer 
@@ -42,30 +39,42 @@ let eGrundkarteNiederoesterreich = L.control.layers({
     "Triesting-Gölsental-Radweg": themaLayer.triestingGoelsental.addTo(map),
     "Triestingau-Radweg": themaLayer.triestingau.addTo(map),
     "Ybbstal-Radweg": themaLayer.ybbstal.addTo(map),
-    "Eurovelo-Radweg Nr. 6": themaLayer.eurovelo6.addTo(map),
-    "Eurovelo-Radweg Nr. 9": themaLayer.eurovelo9.addTo(map),
-    "Eurovelo-Radweg Nr. 13": themaLayer.eurovelo13.addTo(map),
 }).addTo(map);
 
+//Geolocation
+
+let circle = L.circle([0, 0], 0).addTo(map);
+let marker = L.marker([0, 0]).addTo(map);
+
+map.on('locationfound', function (evt) {
+    let radius = Math.round(evt.accuracy);
+
+    marker.setLatLng(evt.latlng)
+    marker.bindTooltip(`You are within ${radius} meters from this point`).openTooltip();
+
+    //L.circle(evt.latlng, radius).addTo(map);
+    circle.setLatLng(evt.latlng);
+    circle.setRadius(radius);
+}
+);
+
+map.on('locationerror', function (evt) {
+    alert(evt.message);
+});
 
 var gpx = './data/niederoesterreich/kamp_thaya_march.gpx';
 new L.GPX(gpx, {
-    async: true,
-    marker_options: {
+        polyline_options: {
+            color: 'green',
+            opacity: 0.75,
+            weight: 3
+        },
+        marker_options: {
         startIconUrl: false,
         endIconUrl: false,
-        shadowUrl: false
-    }
-    //Polylinien stylen funktioniert noch nicht, marker ausschalten auch nicht
-    // polyline_options: [{
-    //     color: `#76eec6`,
-    //     opacity: 0.75,
-    //     weight: 3
-    // }, {
-    //     color: `#76eec6`,
-    //     opacity: 0.75,
-    //     weight: 3
-    // }]
+        shadowUrl: false,
+        wptIconUrls: false
+    },
 }).on('loaded', function (e) {
     //   map.fitBounds(e.target.getBounds());
 }).addTo(themaLayer.kampThayaMarch);
@@ -143,22 +152,6 @@ new L.GPX(gpx, {
     //   map.fitBounds(e.target.getBounds());
 }).addTo(themaLayer.ybbstal);
 
-var gpx = './data/eurovelo6.gpx';
-new L.GPX(gpx, { async: true }).on('loaded', function (e) {
-    //   map.fitBounds(e.target.getBounds());
-}).addTo(themaLayer.eurovelo6);
-
-var gpx = './data/eurovelo9.gpx';
-new L.GPX(gpx, { async: true }).on('loaded', function (e) {
-    //   map.fitBounds(e.target.getBounds());
-}).addTo(themaLayer.eurovelo9);
-
-var gpx = './data/eurovelo13.gpx';
-new L.GPX(gpx, { async: true }).on('loaded', function (e) {
-    //   map.fitBounds(e.target.getBounds());
-}).addTo(themaLayer.eurovelo13);
-
-//Eurovelos erscheinen noch nicht
 
 // Marker der größten Städte
 const STAEDTE = [
