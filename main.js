@@ -76,6 +76,7 @@ map.on('locationerror', function (evt) {
     alert(evt.message);
 });
 
+
 //GPX-Tracks
 
 var gpx = './data/niederoesterreich/kamp_thaya_march.gpx';
