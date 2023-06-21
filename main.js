@@ -21,6 +21,7 @@ let themaLayer = {
     triestingGoelsental: L.featureGroup(),//https://www.bergfex.at/sommer/niederoesterreich/touren/fernradweg/11703,triesting-goelsental-radweg/
     triestingau: L.featureGroup(),//https://www.outdooractive.com/r/1366729
     ybbstal: L.featureGroup(),//https://www.outdooractive.com/r/10654578
+    badeseen: L.featureGroup()
 };
 
 // Hintergrundlayer 
@@ -36,6 +37,7 @@ let eGrundkarteNiederoesterreich = L.control.layers({
     "Triesting-Gölsental-Radweg": themaLayer.triestingGoelsental.addTo(map),
     "Triestingau-Radweg": themaLayer.triestingau.addTo(map),
     "Ybbstal-Radweg": themaLayer.ybbstal.addTo(map),
+    "Badeseen": themaLayer.badeseen
 }).addTo(map);
 
 // Instanz Leaflet MiniMap
@@ -304,3 +306,29 @@ L.control.scale({
 //     theme: "Radtouren Niederösterreich"
 // }).addTo(themaLayer.route);
 // controlElevation5.load("data/niederoesterreich/traisentalweg.gpx")
+
+//Badegewässer einblenden
+async function showLakes(url) {
+    let response = await fetch(url);
+    let jsondata = await response.json();
+    //console.log(response, jsondata);
+    L.geoJSON(jsondata, {
+        style: function (feature) {
+            return {
+                color: "#0074D9",
+                weight: 1,
+                fillOpacity: 0.1,
+                opacity: 0.4
+            };
+        },
+        onEachFeature: function (feature, layer) {
+            let prop = feature.properties;
+            layer.bindPopup(`
+            <h4>Fußgängerzone ${prop.ADRESSE}</h4>
+            <p><i class="fa-sharp fa-solid fa-clock"></i> ${prop.ZEITRAUM || "dauerhaft"}</p>
+            <p><i class="fa-sharp fa-solid fa-circle-info"></i> ${prop.AUSN_TEXT || "keine Ausnahmen"}</p>
+            `)
+        }
+    }).addTo(themaLayer.badeseen);
+}
+showLakes("");
