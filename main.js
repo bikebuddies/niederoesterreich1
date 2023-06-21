@@ -1,9 +1,9 @@
 // Zentrum Karte Objekt
-let noeMitte = { 
+let noeMitte = {
     lat: 48.27032985615784,
     lng: 15.764989268344962,
     title: "Max-Schubert-Warte, Niederösterreich"
-}
+};
 
 // Karte initialisieren und Fullscreen Control 
 let map = L.map("map", {
@@ -21,7 +21,7 @@ let themaLayer = {
     triestingGoelsental: L.featureGroup(),//https://www.bergfex.at/sommer/niederoesterreich/touren/fernradweg/11703,triesting-goelsental-radweg/
     triestingau: L.featureGroup(),//https://www.outdooractive.com/r/1366729
     ybbstal: L.featureGroup(),//https://www.outdooractive.com/r/10654578
-}
+};
 
 // Hintergrundlayer 
 let eGrundkarteNiederoesterreich = L.control.layers({
@@ -46,7 +46,6 @@ var miniMap = new L.Control.MiniMap(
 ).addTo(map);
 
 //Geolocation
-
 map.locate({
     setView: false,
     maxZoom: 16,
@@ -55,11 +54,8 @@ map.locate({
 
 let circle = L.circle([0, 0], 0).addTo(map);
 
-
 map.on('locationfound', function (evt) {
     let radius = Math.round(evt.accuracy);
-
-
     L.circle(evt.latlng, radius).addTo(map);
     circle.setLatLng(evt.latlng);
     circle.setRadius(radius);
@@ -219,25 +215,25 @@ const STAEDTE = [
         title: "St. Pölten, Niederösterreich",
         lat: 48.18735,
         lng: 15.64139,
-        wikipedia: "https://de.wikipedia.org/wiki/St._P%C3%B6lten"//Links raus oder anpassen?
+        wikipedia: "https://de.wikipedia.org/wiki/St._P%C3%B6lten"
     },
     {
         title: "Tulln",
         lat: 48.33001133291213,
         lng: 16.060959034595086,
-        wikipedia: "https://de.wikipedia.org/wiki/Wien" //Links raus oder anpassen?
+        wikipedia: "https://de.wikipedia.org/wiki/Tulln_an_der_Donau" 
     },
     {
         title: "Krems a.d. Donau",
         lat: 48.41022698533108,
         lng: 15.60382006192799,
-        wikipedia: "https://de.wikipedia.org/wiki/Eisenstadt"//Links raus oder anpassen?
+        wikipedia: "https://de.wikipedia.org/wiki/Krems_an_der_Donau"
     },
     {
         title: "Baden bei Wien",
         lat: 48.0024595018188,
         lng: 16.230795040395048,
-        wikipedia: "https://de.wikipedia.org/wiki/Eisenstadt"//Links raus oder anpassen?
+        wikipedia: "https://de.wikipedia.org/wiki/Baden_(Nieder%C3%B6sterreich)"
     },
 ]
 
