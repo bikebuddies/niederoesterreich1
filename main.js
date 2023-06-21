@@ -14,13 +14,13 @@ let map = L.map("map", {
 
 // thematische Layer
 let themaLayer = {
-    kampThayaMarch: L.featureGroup(),
-    piestingtal: L.featureGroup(),
-    thayarunde: L.featureGroup(),
-    traisental: L.featureGroup(),
-    triestingGoelsental: L.featureGroup(),
-    triestingau: L.featureGroup(),
-    ybbstal: L.featureGroup(),
+    kampThayaMarch: L.featureGroup(),//https://www.bergfex.at/sommer/niederoesterreich/touren/fernradweg/11709,kamp-thaya-march-radroute/
+    piestingtal: L.featureGroup(),//https://www.bergfex.at/sommer/niederoesterreich/touren/fernradweg/17716,piestingtal-radweg/
+    thayarunde: L.featureGroup(),//https://www.bergfex.at/sommer/niederoesterreich/touren/fernradweg/84734,thayarunde-waldviertel/
+    traisental: L.featureGroup(),//https://www.bergfex.at/sommer/niederoesterreich/touren/fernradweg/17634,traisental-radweg/
+    triestingGoelsental: L.featureGroup(),//https://www.bergfex.at/sommer/niederoesterreich/touren/fernradweg/11703,triesting-goelsental-radweg/
+    triestingau: L.featureGroup(),//https://www.outdooractive.com/r/1366729
+    ybbstal: L.featureGroup(),//https://www.outdooractive.com/r/10654578
 }
 
 // Hintergrundlayer 
