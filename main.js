@@ -1,15 +1,15 @@
 // Zentrum Karte Objekt
-let stpolten = {
-    lat: 48.33001133291213,
-    lng: 16.060959034595086,
-    title: "St. Pölten, Niederösterreich"
+let noeMitte = { 
+    lat: 48.27032985615784,
+    lng: 15.764989268344962,
+    title: "Max-Schubert-Warte, Niederösterreich"
 }
 
 // Karte initialisieren und Fullscreen Control 
 let map = L.map("map", {
     fullscreenControl: true
 }).setView([
-    stpolten.lat, stpolten.lng
+    noeMitte.lat, noeMitte.lng
 ], 8.5);
 
 // thematische Layer
