@@ -26,8 +26,8 @@ let themaLayer = {
 // Hintergrundlayer 
 //noch den schöneren von der Hauptkarte einfügen, wenn wir das geschafft haben 
 let eGrundkarteNiederoesterreich = L.control.layers({
-    "OpenStreetMap": L.tileLayer.provider("OpenStreetMap.DE").addTo(map),
-    "OpenTopoMap": L.tileLayer.provider("OpenTopoMap"),
+    "BasemapÖsterreich": L.tileLayer.provider("BasemapAT.grau").addTo(map),
+    "StamenB/W": L.tileLayer.provider("Stamen.TonerLite"),
     "CycleTrails": L.tileLayer.provider("CyclOSM"),
 }, {
     "Kamp-Thaya-March-Radweg": themaLayer.kampThayaMarch.addTo(map),
