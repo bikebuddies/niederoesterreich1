@@ -21,7 +21,8 @@ let themaLayer = {
     triestingGoelsental: L.featureGroup(),//https://www.bergfex.at/sommer/niederoesterreich/touren/fernradweg/11703,triesting-goelsental-radweg/
     triestingau: L.featureGroup(),//https://www.outdooractive.com/r/1366729
     ybbstal: L.featureGroup(),//https://www.outdooractive.com/r/10654578
-    badeseen: L.featureGroup()
+    forecast: L.featureGroup(),
+    //badeseen: L.featureGroup()
 };
 
 // Hintergrundlayer 
@@ -37,7 +38,8 @@ let eGrundkarteNiederoesterreich = L.control.layers({
     "Triesting-Gölsental-Radweg": themaLayer.triestingGoelsental.addTo(map),
     "Triestingau-Radweg": themaLayer.triestingau.addTo(map),
     "Ybbstal-Radweg": themaLayer.ybbstal.addTo(map),
-    "Badeseen": themaLayer.badeseen
+    "Wettervorhersage MET Norway": themaLayer.forecast.addTo(map),
+    //"Badeseen": themaLayer.badeseen
 }).addTo(map);
 
 // Instanz Leaflet MiniMap
@@ -84,7 +86,6 @@ async function showForecast(url, latlng) {
     let markup = `
         <h4>Wetter für ${latlng.lat.toFixed(4)}, ${latlng.lng.toFixed(4)} (${timestamp})</h4>
         <table>
-            <tr><td>Luftdruck (hPa)</td><td>${current.air_pressure_at_sea_level}</td></tr>
             <tr><td>Lufttemperatur (C)</td><td>${current.air_temperature}</td></tr>
             <tr><td>Bewölkungsgrad (%)</td><td>${current.cloud_area_fraction}</td></tr>
             <tr><td>Luftfeuchtigkeit (%)</td><td>${current.relative_humidity}</td></tr>
