@@ -307,8 +307,8 @@ L.control.scale({
 // }).addTo(themaLayer.route);
 // controlElevation5.load("data/niederoesterreich/traisentalweg.gpx")
 
-//Badegewässer einblenden
-async function showLakes(url) {
+//Badegewässer einblenden -> Daten fehlen noch
+/*async function showLakes(url) {
     let response = await fetch(url);
     let jsondata = await response.json();
     //console.log(response, jsondata);
@@ -324,11 +324,11 @@ async function showLakes(url) {
         onEachFeature: function (feature, layer) {
             let prop = feature.properties;
             layer.bindPopup(`
-            <h4>Fußgängerzone ${prop.ADRESSE}</h4>
+            <h4>Adresse ${prop.ADRESSE}</h4>
             <p><i class="fa-sharp fa-solid fa-clock"></i> ${prop.ZEITRAUM || "dauerhaft"}</p>
             <p><i class="fa-sharp fa-solid fa-circle-info"></i> ${prop.AUSN_TEXT || "keine Ausnahmen"}</p>
             `)
         }
     }).addTo(themaLayer.badeseen);
 }
-showLakes("");
+showLakes("");*/
