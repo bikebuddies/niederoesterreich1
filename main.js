@@ -24,7 +24,6 @@ let themaLayer = {
 }
 
 // Hintergrundlayer 
-//noch den schöneren von der Hauptkarte einfügen, wenn wir das geschafft haben 
 let eGrundkarteNiederoesterreich = L.control.layers({
     "BasemapÖsterreich": L.tileLayer.provider("BasemapAT.grau").addTo(map),
     "StamenB/W": L.tileLayer.provider("Stamen.TonerLite"),
@@ -43,7 +42,6 @@ let eGrundkarteNiederoesterreich = L.control.layers({
 var miniMap = new L.Control.MiniMap(
     L.tileLayer.provider("BasemapAT.basemap"), {
     toggleDisplay: true,
-    minimized: true
 }
 ).addTo(map);
 
