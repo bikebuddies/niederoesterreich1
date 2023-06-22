@@ -118,7 +118,7 @@ map.on("click", function (evt) {
 //GPX-Tracks
 //Kamp-Thaya-March
 var gpx = './data/niederoesterreich/kamp_thaya_march.gpx';
-new L.GPX(gpx, {
+let kamp = new L.GPX(gpx, {
     polyline_options: {
         color: '#FFD700',
         opacity: 0.75,
@@ -131,12 +131,24 @@ new L.GPX(gpx, {
         wptIconUrls: false
     },
 })
-    .on('loaded').
-    addTo(themaLayer.kampThayaMarch);
+    .on('loaded')
+    .addTo(themaLayer.kampThayaMarch);
+
+// GPX Track visualisieren aus https://raruto.github.io/leaflet-elevation/
+kamp.on("click", function (evt) {
+    let controlElevation = L.control.elevation({
+        time: false,
+        elevationDiv: "#profile",
+        height: 300,
+        theme: "kamp-thaya"
+    }).addTo(map);
+    // Load track from url (allowed data types: "*.geojson", "*.gpx", "*.tcx")
+    controlElevation.load("./data/niederoesterreich/kamp_thaya_march.gpx")
+})
 
 //Piestingtal
 var gpx = './data/niederoesterreich/piestingtal.gpx';
-new L.GPX(gpx, {
+let piesting = new L.GPX(gpx, {
     //async: true,
     polyline_options: {
         color: '#EEEE00',
@@ -152,6 +164,17 @@ new L.GPX(gpx, {
 }).on('loaded', function (e) {
     //map.fitBounds(e.target.getBounds());
 }).addTo(themaLayer.piestingtal);
+// GPX Track visualisieren aus https://raruto.github.io/leaflet-elevation/
+piesting.on("click", function (evt) {
+    let controlElevation = L.control.elevation({
+        time: false,
+        elevationDiv: "#profile",
+        height: 300,
+        theme: "kamp-thaya"
+    }).addTo(map);
+    // Load track from url (allowed data types: "*.geojson", "*.gpx", "*.tcx")
+    controlElevation.load("./data/niederoesterreich/piestingtal.gpx")
+})
 
 //Thayarunde
 var gpx = './data/niederoesterreich/thayarunde.gpx';
