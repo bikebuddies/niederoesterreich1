@@ -123,7 +123,7 @@ let kamp = new L.GPX(gpx, {
         weight: 3
     },
     marker_options: {
-        startIconUrl: false,
+        startIconUrl: "icons/tab_cycle.png",
         endIconUrl: false,
         shadowUrl: false,
         wptIconUrls: false
