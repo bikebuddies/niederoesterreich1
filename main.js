@@ -38,7 +38,7 @@ let layerControl = L.control.layers({
     "Triesting-Gölsental-Radweg": themaLayer.triestingGoelsental.addTo(map),
     "Triestingau-Radweg": themaLayer.triestingau.addTo(map),
     "Ybbstal-Radweg": themaLayer.ybbstal.addTo(map),
-    "Wettervorhersage MET Norway": themaLayer.forecast.addTo(map),
+    "Wettervorhersage MET Norway": themaLayer.forecast,
     //"Badeseen": themaLayer.badeseen
 }).addTo(map);
 
@@ -77,10 +77,8 @@ map.on('locationerror', function (evt) {
 async function showForecast(url, latlng) {
     let response = await fetch(url);
     let jsondata = await response.json();
-    //console.log(jsondata, latlng);
 
     let current = jsondata.properties.timeseries[0].data.instant.details;
-    //console.log(current);
 
     let timestamp = new Date(jsondata.properties.meta.updated_at).toLocaleString();
 
@@ -108,7 +106,7 @@ async function showForecast(url, latlng) {
     L.popup().setLatLng(latlng).setContent(markup).openOn(themaLayer.forecast);
 }
 
-// auf Kartenklick reagieren (Event via map.on)
+// Wettervorhersage auf Kartenklick reagieren (Event via map.on)
 map.on("click", function (evt) {
     console.log(evt);
     let url = `https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=${evt.latlng.lat}&lon=${evt.latlng.lng}`;
@@ -130,10 +128,7 @@ let kamp = new L.GPX(gpx, {
         shadowUrl: false,
         wptIconUrls: false
     },
-})
-    .on('loaded')
-    .addTo(themaLayer.kampThayaMarch);
-
+}).addTo(themaLayer.kampThayaMarch);
 // GPX Track visualisieren aus https://raruto.github.io/leaflet-elevation/
 kamp.on("click", function (evt) {
     let controlElevation = L.control.elevation({
@@ -144,12 +139,11 @@ kamp.on("click", function (evt) {
     }).addTo(map);
     // Load track from url (allowed data types: "*.geojson", "*.gpx", "*.tcx")
     controlElevation.load("./data/niederoesterreich/kamp_thaya_march.gpx")
-})
+});
 
 //Piestingtal
 var gpx = './data/niederoesterreich/piestingtal.gpx';
 let piesting = new L.GPX(gpx, {
-    //async: true,
     polyline_options: {
         color: '#EEEE00',
         opacity: 0.75,
@@ -161,8 +155,6 @@ let piesting = new L.GPX(gpx, {
         shadowUrl: false,
         wptIconUrls: false
     }
-}).on('loaded', function (e) {
-    //map.fitBounds(e.target.getBounds());
 }).addTo(themaLayer.piestingtal);
 // GPX Track visualisieren aus https://raruto.github.io/leaflet-elevation/
 piesting.on("click", function (evt) {
@@ -174,12 +166,11 @@ piesting.on("click", function (evt) {
     }).addTo(map);
     // Load track from url (allowed data types: "*.geojson", "*.gpx", "*.tcx")
     controlElevation.load("./data/niederoesterreich/piestingtal.gpx")
-})
+});
 
 //Thayarunde
 var gpx = './data/niederoesterreich/thayarunde.gpx';
-new L.GPX(gpx, {
-    //async: true,
+let thaya = new L.GPX(gpx, {
     polyline_options: {
         color: '#FFEBCD',
         opacity: 0.75,
@@ -191,14 +182,22 @@ new L.GPX(gpx, {
         shadowUrl: false,
         wptIconUrls: false
     }
-}).on('loaded', function (e) {
-    //   map.fitBounds(e.target.getBounds());
 }).addTo(themaLayer.thayarunde);
+// GPX Track visualisieren aus https://raruto.github.io/leaflet-elevation/
+thaya.on("click", function (evt) {
+    let controlElevation = L.control.elevation({
+        time: false,
+        elevationDiv: "#profile",
+        height: 300,
+        theme: "kamp-thaya"
+    }).addTo(map);
+    // Load track from url (allowed data types: "*.geojson", "*.gpx", "*.tcx")
+    controlElevation.load("./data/niederoesterreich/thayarunde.gpx")
+});
 
 //Traisentalweg
 var gpx = './data/niederoesterreich/traisentalweg.gpx';
-new L.GPX(gpx, {
-    //async: true,
+let traisen = new L.GPX(gpx, {
     polyline_options: {
         color: '#FFFACD',
         opacity: 0.75,
@@ -210,14 +209,22 @@ new L.GPX(gpx, {
         shadowUrl: false,
         wptIconUrls: false
     }
-}).on('loaded', function (e) {
-    //   map.fitBounds(e.target.getBounds());
 }).addTo(themaLayer.traisental);
+// GPX Track visualisieren aus https://raruto.github.io/leaflet-elevation/
+traisen.on("click", function (evt) {
+    let controlElevation = L.control.elevation({
+        time: false,
+        elevationDiv: "#profile",
+        height: 300,
+        theme: "kamp-thaya"
+    }).addTo(map);
+    // Load track from url (allowed data types: "*.geojson", "*.gpx", "*.tcx")
+    controlElevation.load("./data/niederoesterreich/traisentalweg.gpx")
+});
 
 //Triesting Gölsental
 var gpx = './data/niederoesterreich/triesting_goelsental.gpx';
-new L.GPX(gpx, {
-    //async: true,
+let triesting = new L.GPX(gpx, {
     polyline_options: {
         color: '#FFB90F',
         opacity: 0.75,
@@ -229,14 +236,22 @@ new L.GPX(gpx, {
         shadowUrl: false,
         wptIconUrls: false
     }
-}).on('loaded', function (e) {
-    //   map.fitBounds(e.target.getBounds());
 }).addTo(themaLayer.triestingGoelsental);
+// GPX Track visualisieren aus https://raruto.github.io/leaflet-elevation/
+triesting.on("click", function (evt) {
+    let controlElevation = L.control.elevation({
+        time: false,
+        elevationDiv: "#profile",
+        height: 300,
+        theme: "kamp-thaya"
+    }).addTo(map);
+    // Load track from url (allowed data types: "*.geojson", "*.gpx", "*.tcx")
+    controlElevation.load("./data/niederoesterreich/triesting_goelsental.gpx")
+});
 
 //Triestingau
 var gpx = './data/niederoesterreich/triestingau.gpx';
-new L.GPX(gpx, {
-    //async: true,
+let triestingau = new L.GPX(gpx, {
     polyline_options: {
         color: '#B8860B',
         opacity: 0.75,
@@ -248,14 +263,22 @@ new L.GPX(gpx, {
         shadowUrl: false,
         wptIconUrls: false
     }
-}).on('loaded', function (e) {
-    //   map.fitBounds(e.target.getBounds());
 }).addTo(themaLayer.triestingau);
+// GPX Track visualisieren aus https://raruto.github.io/leaflet-elevation/
+triestingau.on("click", function (evt) {
+    let controlElevation = L.control.elevation({
+        time: false,
+        elevationDiv: "#profile",
+        height: 300,
+        theme: "kamp-thaya"
+    }).addTo(map);
+    // Load track from url (allowed data types: "*.geojson", "*.gpx", "*.tcx")
+    controlElevation.load("./data/niederoesterreich/triestingau.gpx")
+});
 
 //Ybbstalweg
 var gpx = './data/niederoesterreich/ybbstalradweg.gpx';
-new L.GPX(gpx, {
-    //async: true,
+let ybbs = new L.GPX(gpx, {
     polyline_options: {
         color: '#EEDD82',
         opacity: 0.75,
@@ -267,9 +290,18 @@ new L.GPX(gpx, {
         shadowUrl: false,
         wptIconUrls: false
     }
-}).on('loaded', function (e) {
-    //   map.fitBounds(e.target.getBounds());
 }).addTo(themaLayer.ybbstal);
+// GPX Track visualisieren aus https://raruto.github.io/leaflet-elevation/
+ybbs.on("click", function (evt) {
+    let controlElevation = L.control.elevation({
+        time: false,
+        elevationDiv: "#profile",
+        height: 300,
+        theme: "kamp-thaya"
+    }).addTo(map);
+    // Load track from url (allowed data types: "*.geojson", "*.gpx", "*.tcx")
+    controlElevation.load("./data/niederoesterreich/ybbstalradweg.gpx")
+});
 
 //Funktion implementieren für die GPX-Tracks
 /*async function gpxTracks(gpx) {
