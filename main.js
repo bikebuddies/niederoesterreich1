@@ -283,8 +283,7 @@ const STAEDTE = [
 ]
 
 for (let stadt of STAEDTE) {
-    //Marker für den Stopp
-    let marker = L.marker([stadt.lat, stadt.lng])
+    L.marker([stadt.lat, stadt.lng])
         .addTo(map)
         .bindPopup(`<b>${stadt.title}</b> <br>
         <a href="${stadt.wikipedia}">Wikipedia</a>
