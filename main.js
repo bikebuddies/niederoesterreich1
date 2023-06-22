@@ -26,7 +26,7 @@ let themaLayer = {
 };
 
 // Hintergrundlayer 
-let eGrundkarteNiederoesterreich = L.control.layers({
+let layerControl = L.control.layers({
     "BasemapÖsterreich": L.tileLayer.provider("BasemapAT.grau").addTo(map),
     "StamenB/W": L.tileLayer.provider("Stamen.TonerLite"),
     "CycleTrails": L.tileLayer.provider("CyclOSM"),
@@ -41,6 +41,9 @@ let eGrundkarteNiederoesterreich = L.control.layers({
     "Wettervorhersage MET Norway": themaLayer.forecast.addTo(map),
     //"Badeseen": themaLayer.badeseen
 }).addTo(map);
+
+// Layer beim Besuch auf der Seite ausklappen
+layerControl.expand();
 
 // Instanz Leaflet MiniMap
 var miniMap = new L.Control.MiniMap(
@@ -131,6 +134,7 @@ new L.GPX(gpx, {
     .on('loaded').
     addTo(themaLayer.kampThayaMarch);
 
+//Piestingtal
 var gpx = './data/niederoesterreich/piestingtal.gpx';
 new L.GPX(gpx, {
     //async: true,
@@ -149,6 +153,7 @@ new L.GPX(gpx, {
     //map.fitBounds(e.target.getBounds());
 }).addTo(themaLayer.piestingtal);
 
+//Thayarunde
 var gpx = './data/niederoesterreich/thayarunde.gpx';
 new L.GPX(gpx, {
     //async: true,
@@ -167,6 +172,7 @@ new L.GPX(gpx, {
     //   map.fitBounds(e.target.getBounds());
 }).addTo(themaLayer.thayarunde);
 
+//Traisentalweg
 var gpx = './data/niederoesterreich/traisentalweg.gpx';
 new L.GPX(gpx, {
     //async: true,
@@ -185,6 +191,7 @@ new L.GPX(gpx, {
     //   map.fitBounds(e.target.getBounds());
 }).addTo(themaLayer.traisental);
 
+//Triesting Gölsental
 var gpx = './data/niederoesterreich/triesting_goelsental.gpx';
 new L.GPX(gpx, {
     //async: true,
@@ -203,6 +210,7 @@ new L.GPX(gpx, {
     //   map.fitBounds(e.target.getBounds());
 }).addTo(themaLayer.triestingGoelsental);
 
+//Triestingau
 var gpx = './data/niederoesterreich/triestingau.gpx';
 new L.GPX(gpx, {
     //async: true,
@@ -221,6 +229,7 @@ new L.GPX(gpx, {
     //   map.fitBounds(e.target.getBounds());
 }).addTo(themaLayer.triestingau);
 
+//Ybbstalweg
 var gpx = './data/niederoesterreich/ybbstalradweg.gpx';
 new L.GPX(gpx, {
     //async: true,
