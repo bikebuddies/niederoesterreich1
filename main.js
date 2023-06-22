@@ -95,7 +95,7 @@ async function showForecast(url, latlng) {
     `;
 
     // Wettersymbole hinzufügen
-    for (let i =0; i<=24; i+=3) {
+    for (let i = 0; i <= 24; i += 3) {
         //console.log(timeseries[i]);
         let icon = timeseries[i].data.next_1_hours.summary.symbol_code;
         let img = `icons/${icon}.svg`;
@@ -106,16 +106,141 @@ async function showForecast(url, latlng) {
 }
 
 // auf Kartenklick reagieren (Event via map.on)
-map.on("click", function(evt) {
+map.on("click", function (evt) {
     console.log(evt);
     let url = `https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=${evt.latlng.lat}&lon=${evt.latlng.lng}`;
     showForecast(url, evt.latlng);
 });
 
 //GPX-Tracks
+//Kamp-Thaya-March
+var gpx = './data/niederoesterreich/kamp_thaya_march.gpx';
+new L.GPX(gpx, {
+    polyline_options: {
+        color: '#FFD700',
+        opacity: 0.75,
+        weight: 3
+    },
+    marker_options: {
+        startIconUrl: false,
+        endIconUrl: false,
+        shadowUrl: false,
+        wptIconUrls: false
+    },
+})
+    .on('loaded').
+    addTo(themaLayer.kampThayaMarch);
+
+var gpx = './data/niederoesterreich/piestingtal.gpx';
+new L.GPX(gpx, {
+    //async: true,
+    polyline_options: {
+        color: '#EEEE00',
+        opacity: 0.75,
+        weight: 3
+    },
+    marker_options: {
+        startIconUrl: false,
+        endIconUrl: false,
+        shadowUrl: false,
+        wptIconUrls: false
+    }
+}).on('loaded', function (e) {
+    //map.fitBounds(e.target.getBounds());
+}).addTo(themaLayer.piestingtal);
+
+var gpx = './data/niederoesterreich/thayarunde.gpx';
+new L.GPX(gpx, {
+    //async: true,
+    polyline_options: {
+        color: '#FFEBCD',
+        opacity: 0.75,
+        weight: 3
+    },
+    marker_options: {
+        startIconUrl: false,
+        endIconUrl: false,
+        shadowUrl: false,
+        wptIconUrls: false
+    }
+}).on('loaded', function (e) {
+    //   map.fitBounds(e.target.getBounds());
+}).addTo(themaLayer.thayarunde);
+
+var gpx = './data/niederoesterreich/traisentalweg.gpx';
+new L.GPX(gpx, {
+    //async: true,
+    polyline_options: {
+        color: '#FFFACD',
+        opacity: 0.75,
+        weight: 3
+    },
+    marker_options: {
+        startIconUrl: false,
+        endIconUrl: false,
+        shadowUrl: false,
+        wptIconUrls: false
+    }
+}).on('loaded', function (e) {
+    //   map.fitBounds(e.target.getBounds());
+}).addTo(themaLayer.traisental);
+
+var gpx = './data/niederoesterreich/triesting_goelsental.gpx';
+new L.GPX(gpx, {
+    //async: true,
+    polyline_options: {
+        color: '#FFB90F',
+        opacity: 0.75,
+        weight: 3
+    },
+    marker_options: {
+        startIconUrl: false,
+        endIconUrl: false,
+        shadowUrl: false,
+        wptIconUrls: false
+    }
+}).on('loaded', function (e) {
+    //   map.fitBounds(e.target.getBounds());
+}).addTo(themaLayer.triestingGoelsental);
+
+var gpx = './data/niederoesterreich/triestingau.gpx';
+new L.GPX(gpx, {
+    //async: true,
+    polyline_options: {
+        color: '#B8860B',
+        opacity: 0.75,
+        weight: 3
+    },
+    marker_options: {
+        startIconUrl: false,
+        endIconUrl: false,
+        shadowUrl: false,
+        wptIconUrls: false
+    }
+}).on('loaded', function (e) {
+    //   map.fitBounds(e.target.getBounds());
+}).addTo(themaLayer.triestingau);
+
+var gpx = './data/niederoesterreich/ybbstalradweg.gpx';
+new L.GPX(gpx, {
+    //async: true,
+    polyline_options: {
+        color: '#EEDD82',
+        opacity: 0.75,
+        weight: 3
+    },
+    marker_options: {
+        startIconUrl: false,
+        endIconUrl: false,
+        shadowUrl: false,
+        wptIconUrls: false
+    }
+}).on('loaded', function (e) {
+    //   map.fitBounds(e.target.getBounds());
+}).addTo(themaLayer.ybbstal);
 
 //Funktion implementieren für die GPX-Tracks
-async function gpxTracks(gpx) {
+/*async function gpxTracks(gpx) {
     let routenFarben = {//Gelbtöne von https://www.farb-tabelle.de/de/farbtabelle.htm#yellow
         "Ybbstalradweg": "#EEDD82", //BlanchedAlmond 
         "Triestingau-Radweg": "#B8860B", //DarkGoldenrod
@@ -160,98 +285,11 @@ gpxTracks("data/niederoesterreich/traisentalweg.gpx");
 gpxTracks("data/niederoesterreich/triesting_goelsental.gpx");
 gpxTracks("data/niederoesterreich/triestinggau.gpx");
 gpxTracks("data/niederoesterreich/ybbstalradweg.gpx");
+*/
 
 //Farben und Themalayer zuordnen! Popups für die Tracks erstellen bei Klick (wie in start repo)
 
-// var gpx = './data/niederoesterreich/kamp_thaya_march.gpx';
-// new L.GPX(gpx, {
-//         polyline_options: {
-//             color: 'green',
-//             opacity: 0.75,
-//             weight: 3
-//         },
-//         marker_options: {
-//         startIconUrl: false,
-//         endIconUrl: false,
-//         shadowUrl: false,
-//         wptIconUrls: false
-//     },
-// }).on('loaded', function (e) {
-//     //   map.fitBounds(e.target.getBounds());
-// }).addTo(themaLayer.kampThayaMarch);
 
-// var gpx = './data/niederoesterreich/piestingtal.gpx';
-// new L.GPX(gpx, { async: true,
-//     marker_options: {
-//         startIconUrl: false,
-//         endIconUrl: false,
-//         shadowUrl: false,
-//         wptIconUrls: false
-//     }
-//  }).on('loaded', function (e) {
-//     //   map.fitBounds(e.target.getBounds());
-// }).addTo(themaLayer.piestingtal);
-
-// var gpx = './data/niederoesterreich/thayarunde.gpx';
-// new L.GPX(gpx, { async: true,
-//     marker_options: {
-//         startIconUrl: false,
-//         endIconUrl: false,
-//         shadowUrl: false,
-//         wptIconUrls: false
-//     }
-//  }).on('loaded', function (e) {
-//     //   map.fitBounds(e.target.getBounds());
-// }).addTo(themaLayer.thayarunde);
-
-// var gpx = './data/niederoesterreich/traisentalweg.gpx';
-// new L.GPX(gpx, { async: true,
-//     marker_options: {
-//         startIconUrl: false,
-//         endIconUrl: false,
-//         shadowUrl: false,
-//         wptIconUrls: false
-//     }
-//  }).on('loaded', function (e) {
-//     //   map.fitBounds(e.target.getBounds());
-// }).addTo(themaLayer.traisental);
-
-// var gpx = './data/niederoesterreich/triesting_goelsental.gpx';
-// new L.GPX(gpx, { async: true,
-//     marker_options: {
-//         startIconUrl: false,
-//         endIconUrl: false,
-//         shadowUrl: false,
-//         wptIconUrls: false
-//     }
-//  }).on('loaded', function (e) {
-//     //   map.fitBounds(e.target.getBounds());
-// }).addTo(themaLayer.triestingGoelsental);
-
-// var gpx = './data/niederoesterreich/triestingau.gpx';
-// new L.GPX(gpx, { async: true,
-//     marker_options: {
-//         startIconUrl: false,
-//         endIconUrl: false,
-//         shadowUrl: false,
-//         wptIconUrls: false
-//     }
-//  }).on('loaded', function (e) {
-//     //   map.fitBounds(e.target.getBounds());
-// }).addTo(themaLayer.triestingau);
-
-// var gpx = './data/niederoesterreich/ybbstalradweg.gpx';
-// new L.GPX(gpx, {
-//     async: true,
-//     marker_options: {
-//         startIconUrl: false,
-//         endIconUrl: false,
-//         shadowUrl: false,
-//         wptIconUrls: false
-//     }
-// }).on('loaded', function (e) {
-//     //   map.fitBounds(e.target.getBounds());
-// }).addTo(themaLayer.ybbstal);
 
 
 // Marker der größten Städte
@@ -266,7 +304,7 @@ const STAEDTE = [
         title: "Tulln",
         lat: 48.33001133291213,
         lng: 16.060959034595086,
-        wikipedia: "https://de.wikipedia.org/wiki/Tulln_an_der_Donau" 
+        wikipedia: "https://de.wikipedia.org/wiki/Tulln_an_der_Donau"
     },
     {
         title: "Krems a.d. Donau",
