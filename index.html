@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>BikeBuddies</title>
+    <title>BikeBuddies - Niederösterreich</title>
 
     <!-- Disable unwanted scaling of page -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -44,13 +44,21 @@
     <link rel="stylesheet" href="https://unpkg.com/@raruto/leaflet-elevation/dist/leaflet-elevation.css" />
     <script src="https://unpkg.com/@raruto/leaflet-elevation/dist/leaflet-elevation.js"></script>
 
+     <!-- Leaflet MiniMap -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"
+     integrity="sha512-efbAfGnrnjA+hLwOLu91W034fBGPsMwZMVCTwLUI2PDX/m7rOiuhYZ+D2mZ8rKcpC/I/7pdgoL8T4eYvMHNoQg=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"
+     integrity="sha512-ceQPs2CHke3gSINLt/JV37W1rfJOM64yuH999hnRhTP7tNtcSBp5hlTKhn8CEIhsFweSBrZMPVotAKjoyxGWNg=="
+     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <!-- eigene Stile und Hauptskript -->
     <link rel="stylesheet" href="main.css">
     <script defer src="main.js"></script>
 
     <!-- Verlinkung zu Pulldown.js-->
     <script src="dropdown.js"></script>
-
+  
 </head>
 
 <nav id="pulldown">
@@ -80,25 +88,37 @@
         </header>
         <article>
             <p>
-                Hier findet ihr unsere Top 10 Radrouten für Niederösterreich. Im Pulldown Menü können die einzelnen
+                Hier findet ihr unsere Top 7 Radrouten für Niederösterreich. Im Layer Menü können die einzelnen
                 Routen ausgewählt und weitere Infos auf den jeweiligen Websites nachgeschaut werden.
             </p>
-            <h3>Karte mit den Top 10 Radrouten Niederösterreichs</h3>
-            <select name="pulldown" id="pulldown"></select>
+            <h3>Karte mit den Top 7 Radrouten Niederösterreichs</h3>
             <div id="map"></div>
             <div id="profile"></div>
 
         </article>
         <footer>
-            <strong>Quelle:</strong>
-            <nav>
-                <!-- Quellen für der gpx-Tracks angeben-->
-                <!-- <a href="https://leafletjs.com/examples/mobile/">Leaflet on Mobile Tutorial</a> -->
+            <h3>Weiterführende Links:</h3>
+                <ul><li><a href="https://heurigenkalender.niederoesterreich.at/"><u>Heurigenkalender</u></a></li>
+                    <li><a href="https://www.burgenland.info/uebernachten/unterkuenfte/unterkuenfte-fuer-radfahrer"><u>Unterkünfte</u></a></li>
+                </ul>
+                <br>
+            <strong>Quellen der Radrouten:</strong>
+            <nav></nav>
+                <a href="https://www.bergfex.at/sommer/niederoesterreich/touren/fernradweg/11709,kamp-thaya-march-radroute/">Kamp-Thaya-March-Radroute</a> |
+                <a href="https://www.bergfex.at/sommer/niederoesterreich/touren/fernradweg/17716,piestingtal-radweg/">Piestingtal-Radroute</a> |
+                <a href="https://www.bergfex.at/sommer/niederoesterreich/touren/fernradweg/84734,thayarunde-waldviertel/">Thayarunde</a> |
+                <a href="https://www.bergfex.at/sommer/niederoesterreich/touren/fernradweg/17634,traisental-radweg/">Traisental-Radweg</a> |
+                <a href="https://www.bergfex.at/sommer/niederoesterreich/touren/fernradweg/11703,triesting-goelsental-radweg/
+                triestingau: https://www.outdooractive.com/r/1366729">Triesting-Gölsental-Radroute</a> |
+                <a href="https://www.outdooractive.com/r/1366729">Triestingau-Radroute</a> |
+                <a href="https://www.outdooractive.com/r/10654578">Ybbstal-Radroute</a><br>
             </nav>
-            <p>
-                BikeBuddies ist ein Gruppenprojekt im Rahmen der VU Geoinformatik: Web mapping am Institut
-                für Geographie an der Universität Innsbruck.
-            </p>
+            <br>
+            <strong>Quellen der Wettervorhersage:</strong>
+            <nav>
+                <a href="https://api.met.no/weatherapi/locationforecast/2.0/documentation">MET Norway Locationforecast</a> |
+                <a href="https://api.met.no/weatherapi/weathericon/2.0/documentation">MET Norway Weathericons</a>
+            </nav>
         </footer>
     </main>
 </body>
