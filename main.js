@@ -127,8 +127,9 @@ let kamp = new L.GPX(gpx, {
         endIconUrl: false,
         shadowUrl: false,
         wptIconUrls: false
-    },
+    }
 }).addTo(themaLayer.kampThayaMarch);
+
 // GPX Track visualisieren aus https://raruto.github.io/leaflet-elevation/
 kamp.on("click", function (evt) {
     let controlElevation = L.control.elevation({
@@ -141,6 +142,7 @@ kamp.on("click", function (evt) {
     controlElevation.load("./data/niederoesterreich/kamp_thaya_march.gpx")
 });
 
+
 //Piestingtal
 var gpx = './data/niederoesterreich/piestingtal.gpx';
 let piesting = new L.GPX(gpx, {
@@ -150,7 +152,7 @@ let piesting = new L.GPX(gpx, {
         weight: 3
     },
     marker_options: {
-        startIconUrl: false,
+        startIconUrl: "icons/tab_cycle.png",
         endIconUrl: false,
         shadowUrl: false,
         wptIconUrls: false
@@ -177,7 +179,7 @@ let thaya = new L.GPX(gpx, {
         weight: 3
     },
     marker_options: {
-        startIconUrl: false,
+        startIconUrl: "icons/tab_cycle.png",
         endIconUrl: false,
         shadowUrl: false,
         wptIconUrls: false
@@ -204,7 +206,7 @@ let traisen = new L.GPX(gpx, {
         weight: 3
     },
     marker_options: {
-        startIconUrl: false,
+        startIconUrl: "icons/tab_cycle.png",
         endIconUrl: false,
         shadowUrl: false,
         wptIconUrls: false
@@ -231,7 +233,7 @@ let triesting = new L.GPX(gpx, {
         weight: 3
     },
     marker_options: {
-        startIconUrl: false,
+        startIconUrl: "icons/tab_cycle.png",
         endIconUrl: false,
         shadowUrl: false,
         wptIconUrls: false
@@ -258,7 +260,7 @@ let triestingau = new L.GPX(gpx, {
         weight: 3
     },
     marker_options: {
-        startIconUrl: false,
+        startIconUrl: "icons/tab_cycle.png",
         endIconUrl: false,
         shadowUrl: false,
         wptIconUrls: false
@@ -285,7 +287,7 @@ let ybbs = new L.GPX(gpx, {
         weight: 3
     },
     marker_options: {
-        startIconUrl: false,
+        startIconUrl: "icons/tab_cycle.png",
         endIconUrl: false,
         shadowUrl: false,
         wptIconUrls: false
