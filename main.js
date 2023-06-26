@@ -27,7 +27,8 @@ let themaLayer = {
 
 // Hintergrundlayer 
 let layerControl = L.control.layers({
-    "BasemapÖsterreich": L.tileLayer.provider("BasemapAT.grau").addTo(map),
+    "Terrain": L.tileLayer.provider("Stamen.Terrain").addTo(map),
+    "BasemapÖsterreich": L.tileLayer.provider("BasemapAT.grau"),
     "StamenB/W": L.tileLayer.provider("Stamen.TonerLite"),
     "CycleTrails": L.tileLayer.provider("CyclOSM"),
 }, {
@@ -273,7 +274,7 @@ triestingau.on("click", function (evt) {
         time: false,
         elevationDiv: "#profile",
         height: 300,
-        theme: "kamp-thaya"
+        theme: "triestingau"
     }).addTo(map);
     // Load track from url (allowed data types: "*.geojson", "*.gpx", "*.tcx")
     controlElevation.load("./data/niederoesterreich/triestingau.gpx")
@@ -305,59 +306,6 @@ ybbs.on("click", function (evt) {
     // Load track from url (allowed data types: "*.geojson", "*.gpx", "*.tcx")
     controlElevation.load("./data/niederoesterreich/ybbstalradweg.gpx")
 });
-
-//Funktion implementieren für die GPX-Tracks
-/*async function gpxTracks(gpx) {
-    let routenFarben = {//Gelbtöne von https://www.farb-tabelle.de/de/farbtabelle.htm#yellow
-        "Ybbstalradweg": "#EEDD82", //BlanchedAlmond 
-        "Triestingau-Radweg": "#B8860B", //DarkGoldenrod
-        "Triesting-Gölsental-Radweg": "#FFB90F", //DarkGoldenrod1
-        "Traisentalweg": "#FFFACD", //LemonChiffon
-        "Thayarunde Waldviertel": "#FFEBCD", //LightGo.denrod
-        "Piestingtal-Radweg": "#EEEE00", //yellow2
-        "Kamp-Thaya-March-Radroute": "#FFD700", //gold
-    };
-    let zuordnungLayer = {
-        "Ybbstalradweg": "themaLayer.kampThayaMarch",
-        "Piestingtal-Radweg": "themaLayer.piestingtal",
-        "Thayarunde": "themaLayer.thayarunde",
-        "Traisental-Radweg": "themaLayer.traisental",
-        "Triesting-Gölsental-Radweg": "themaLayer.triestingGoelsental",
-        "Triestingau-Radweg": "themaLayer.triestingau",
-        "Ybbstal-Radweg": "themaLayer.ybbstal"
-    };
-    new L.GPX(gpx, {
-        polyline_options: function (feature) {
-            return {
-                color: routenFarben[feature.properties.Name],//der Zugriff auf die Farben funktioniert noch nicht!
-                opacity: 0.75,
-                weight: 3
-            };
-        },
-        marker_options: {
-            startIconUrl: false,
-            endIconUrl: false,
-            shadowUrl: false,
-            wptIconUrls: false
-        },
-    }).on('loaded', function (e) {
-        //   map.fitBounds(e.target.getBounds());
-    }).addTo(themaLayer);//hier noch den richtigen Themalayern zuordnen!
-}
-
-gpxTracks("data/niederoesterreich/kamp_thaya_march.gpx");
-gpxTracks("data/niederoesterreich/piestingtal.gpx");
-gpxTracks("data/niederoesterreich/thayarunde.gpx");
-gpxTracks("data/niederoesterreich/traisentalweg.gpx");
-gpxTracks("data/niederoesterreich/triesting_goelsental.gpx");
-gpxTracks("data/niederoesterreich/triestinggau.gpx");
-gpxTracks("data/niederoesterreich/ybbstalradweg.gpx");
-*/
-
-//Farben und Themalayer zuordnen! Popups für die Tracks erstellen bei Klick (wie in start repo)
-
-
-
 
 // Marker der größten Städte
 const STAEDTE = [
@@ -443,7 +391,6 @@ L.control.scale({
     imperial: false,
 }).addTo(map);
 
-//Badegewässer einblenden -> Daten fehlen noch
 /*async function showLakes(url) {
     let response = await fetch(url);
     let jsondata = await response.json();
@@ -468,3 +415,55 @@ L.control.scale({
     }).addTo(themaLayer.badeseen);
 }
 showLakes("");*/
+
+//Funktion implementieren für die GPX-Tracks
+/*async function gpxTracks(gpx) {
+    let routenFarben = {//Gelbtöne von https://www.farb-tabelle.de/de/farbtabelle.htm#yellow
+        "Ybbstalradweg": "#EEDD82", //BlanchedAlmond 
+        "Triestingau-Radweg": "#B8860B", //DarkGoldenrod
+        "Triesting-Gölsental-Radweg": "#FFB90F", //DarkGoldenrod1
+        "Traisentalweg": "#FFFACD", //LemonChiffon
+        "Thayarunde Waldviertel": "#FFEBCD", //LightGo.denrod
+        "Piestingtal-Radweg": "#EEEE00", //yellow2
+        "Kamp-Thaya-March-Radroute": "#FFD700", //gold
+    };
+    let zuordnungLayer = {
+        "Ybbstalradweg": "themaLayer.kampThayaMarch",
+        "Piestingtal-Radweg": "themaLayer.piestingtal",
+        "Thayarunde": "themaLayer.thayarunde",
+        "Traisental-Radweg": "themaLayer.traisental",
+        "Triesting-Gölsental-Radweg": "themaLayer.triestingGoelsental",
+        "Triestingau-Radweg": "themaLayer.triestingau",
+        "Ybbstal-Radweg": "themaLayer.ybbstal"
+    };
+    new L.GPX(gpx, {
+        polyline_options: function (feature) {
+            return {
+                color: routenFarben[feature.properties.Name],//der Zugriff auf die Farben funktioniert noch nicht!
+                opacity: 0.75,
+                weight: 3
+            };
+        },
+        marker_options: {
+            startIconUrl: false,
+            endIconUrl: false,
+            shadowUrl: false,
+            wptIconUrls: false
+        },
+    }).on('loaded', function (e) {
+        //   map.fitBounds(e.target.getBounds());
+    }).addTo(themaLayer);//hier noch den richtigen Themalayern zuordnen!
+}
+
+gpxTracks("data/niederoesterreich/kamp_thaya_march.gpx");
+gpxTracks("data/niederoesterreich/piestingtal.gpx");
+gpxTracks("data/niederoesterreich/thayarunde.gpx");
+gpxTracks("data/niederoesterreich/traisentalweg.gpx");
+gpxTracks("data/niederoesterreich/triesting_goelsental.gpx");
+gpxTracks("data/niederoesterreich/triestinggau.gpx");
+gpxTracks("data/niederoesterreich/ybbstalradweg.gpx");
+*/
+
+//Farben und Themalayer zuordnen! Popups für die Tracks erstellen bei Klick (wie in start repo)
+
+
