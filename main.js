@@ -22,7 +22,7 @@ let themaLayer = {
     triestingau: L.featureGroup(),//https://www.outdooractive.com/r/1366729
     ybbstal: L.featureGroup(),//https://www.outdooractive.com/r/10654578
     forecast: L.featureGroup(),
-    //badeseen: L.featureGroup()
+    badeseen: L.featureGroup()
 };
 
 // Hintergrundlayer 
@@ -39,7 +39,7 @@ let layerControl = L.control.layers({
     "Triestingau-Radweg": themaLayer.triestingau.addTo(map),
     "Ybbstal-Radweg": themaLayer.ybbstal.addTo(map),
     "Wettervorhersage MET Norway": themaLayer.forecast,
-    //"Badeseen": themaLayer.badeseen
+    "Badeseen": themaLayer.badeseen
 }).addTo(map);
 
 // Layer beim Besuch auf der Seite ausklappen
@@ -394,6 +394,49 @@ for (let stadt of STAEDTE) {
         <a href="${stadt.wikipedia}">Wikipedia</a>
     `)
 };
+
+//Badeseen
+const BADESEEN = [
+    {
+        title: "Ottensteiner Stausee", 
+        lat: 48.61799121352252, 
+        lng: 15.267483226467856,
+    },
+    {
+        title: "Bernhardsthaler Teich", 
+        lat: 48.692857068868165,
+        lng: 16.88281412284728
+    },
+    {
+        title: "Naturbadeseen Traismauer", 
+        lat: 48.3654889628816,
+        lng: 15.753145918954235
+    },
+    {
+        title: "Badeteich Kalte Kuchl", 
+        lat: 47.888507360144025, 
+        lng: 15.68338462871469
+    },
+    {
+        title: "Badeteich Persenbeug-Gottsdorf", 
+        lat: 48.18540724140658, 
+        lng: 15.103914278527622
+    }
+];
+
+for (let badeseen of BADESEEN) {
+    L.marker([badeseen.lat, badeseen.lng], {
+        icon: L.icon({
+            iconUrl: `icons/swimming.png`,
+            popupAnchor: [0, -37],
+            iconAnchor: [16, 37],
+        })
+    })
+        .addTo(themaLayer.badeseen)
+        .bindPopup(`<b>${badeseen.title}</b> <br>
+    `)
+};
+
 
 // Maßstab
 L.control.scale({
