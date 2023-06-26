@@ -400,60 +400,6 @@ L.control.scale({
     imperial: false,
 }).addTo(map);
 
-// //GPX-Track visualisieren -> Höhenprofile (es sind noch nicht alle)
-// let controlElevation = L.control.elevation({
-//     time: false,
-//     elevationDiv: "#profile",
-//     height: 300,
-//     theme: "Radtouren Niederösterreich"
-// }).addTo(themaLayer.route);
-// controlElevation.load("data/niederoesterreich/piestingtal.gpx");
-
-// //GPX-Track visualisieren
-// let controlElevation1 = L.control.elevation({
-//     time: false,
-//     elevationDiv: "#profile",
-//     height: 300,
-//     theme: "Radtouren Niederösterreich"
-// }).addTo(themaLayer.route);
-// controlElevation1.load("data/niederoesterreich/kamp_thaya_march.gpx")
-
-// //GPX-Track visualisieren
-// let controlElevation2 = L.control.elevation({
-//     time: false,
-//     elevationDiv: "#profile",
-//     height: 300,
-//     theme: "Radtouren Niederösterreich"
-// }).addTo(themaLayer.route);
-// controlElevation2.load("data/niederoesterreich/thayarunde.gpx")
-
-// //GPX-Track visualisieren
-// let controlElevation3 = L.control.elevation({
-//     time: false,
-//     elevationDiv: "#profile",
-//     height: 300,
-//     theme: "Radtouren Niederösterreich"
-// }).addTo(themaLayer.route);
-// controlElevation3.load("data/niederoesterreich/traisentalweg.gpx")
-
-// //GPX-Track visualisieren
-// let controlElevation4 = L.control.elevation({
-//     time: false,
-//     elevationDiv: "#profile",
-//     height: 300,
-//     theme: "Radtouren Niederösterreich"
-// }).addTo(themaLayer.route);
-// controlElevation4.load("triesting_goelsental.gpx")
-
-// //GPX-Track visualisieren
-// let controlElevation5 = L.control.elevation({
-//     time: false,
-//     elevationDiv: "#profile",
-//     height: 300,
-//     theme: "Radtouren Niederösterreich"
-// }).addTo(themaLayer.route);
-// controlElevation5.load("data/niederoesterreich/traisentalweg.gpx")
-
 //Badegewässer einblenden -> Daten fehlen noch
 /*async function showLakes(url) {
     let response = await fetch(url);
