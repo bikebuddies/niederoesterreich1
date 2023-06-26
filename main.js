@@ -130,6 +130,7 @@ let kamp = new L.GPX(gpx, {
     }
 }).addTo(themaLayer.kampThayaMarch);
 
+
 // GPX Track visualisieren aus https://raruto.github.io/leaflet-elevation/
 kamp.on("click", function (evt) {
     let controlElevation = L.control.elevation({
