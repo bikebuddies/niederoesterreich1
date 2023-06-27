@@ -69,8 +69,13 @@ map.on('locationfound', function (evt) {
 }
 );
 
+let errorDisplayed = false;
+
 map.on('locationerror', function (evt) {
-    alert(evt.message);
+    if (!errorDisplayed) {
+        alert(evt.message);
+        errorDisplayed = true;
+    }
 });
 
 // Wettervorhersage MET Norway
