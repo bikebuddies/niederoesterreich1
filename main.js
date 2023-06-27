@@ -27,8 +27,7 @@ let themaLayer = {
 
 // Hintergrundlayer 
 let layerControl = L.control.layers({
-    "Terrain": L.tileLayer.provider("Stamen.Terrain").addTo(map),
-    "BasemapÖsterreich": L.tileLayer.provider("BasemapAT.grau"),
+    "BasemapÖsterreich": L.tileLayer.provider("BasemapAT.grau").addTo(map),
     "StamenB/W": L.tileLayer.provider("Stamen.TonerLite"),
     "CycleTrails": L.tileLayer.provider("CyclOSM"),
 }, {
@@ -70,8 +69,13 @@ map.on('locationfound', function (evt) {
 }
 );
 
+let errorDisplayed = false;
+
 map.on('locationerror', function (evt) {
-    alert(evt.message);
+    if (!errorDisplayed) {
+        alert(evt.message);
+        errorDisplayed = true;
+    }
 });
 
 // Wettervorhersage MET Norway
@@ -98,11 +102,9 @@ async function showForecast(url, latlng) {
 
     // Wettersymbole hinzufügen
     for (let i = 0; i <= 24; i += 3) {
-        //console.log(timeseries[i]);
         let icon = timeseries[i].data.next_1_hours.summary.symbol_code;
         let img = `icons/${icon}.svg`;
         markup += `<img src="${img}" style="width:32px;" title="${timeseries[i].time.toLocaleString()}">`
-        //console.log(icon, img);
     }
     L.popup().setLatLng(latlng).setContent(markup).openOn(themaLayer.forecast);
 }
@@ -346,28 +348,28 @@ for (let stadt of STAEDTE) {
 //Badeseen
 const BADESEEN = [
     {
-        title: "Ottensteiner Stausee", 
-        lat: 48.61799121352252, 
+        title: "Ottensteiner Stausee",
+        lat: 48.61799121352252,
         lng: 15.267483226467856,
     },
     {
-        title: "Bernhardsthaler Teich", 
+        title: "Bernhardsthaler Teich",
         lat: 48.692857068868165,
         lng: 16.88281412284728
     },
     {
-        title: "Naturbadeseen Traismauer", 
+        title: "Naturbadeseen Traismauer",
         lat: 48.3654889628816,
         lng: 15.753145918954235
     },
     {
-        title: "Badeteich Kalte Kuchl", 
-        lat: 47.888507360144025, 
+        title: "Badeteich Kalte Kuchl",
+        lat: 47.888507360144025,
         lng: 15.68338462871469
     },
     {
-        title: "Badeteich Persenbeug-Gottsdorf", 
-        lat: 48.18540724140658, 
+        title: "Badeteich Persenbeug-Gottsdorf",
+        lat: 48.18540724140658,
         lng: 15.103914278527622
     }
 ];
@@ -390,80 +392,3 @@ for (let badeseen of BADESEEN) {
 L.control.scale({
     imperial: false,
 }).addTo(map);
-
-/*async function showLakes(url) {
-    let response = await fetch(url);
-    let jsondata = await response.json();
-    //console.log(response, jsondata);
-    L.geoJSON(jsondata, {
-        style: function (feature) {
-            return {
-                color: "#0074D9",
-                weight: 1,
-                fillOpacity: 0.1,
-                opacity: 0.4
-            };
-        },
-        onEachFeature: function (feature, layer) {
-            let prop = feature.properties;
-            layer.bindPopup(`
-            <h4>Adresse ${prop.ADRESSE}</h4>
-            <p><i class="fa-sharp fa-solid fa-clock"></i> ${prop.ZEITRAUM || "dauerhaft"}</p>
-            <p><i class="fa-sharp fa-solid fa-circle-info"></i> ${prop.AUSN_TEXT || "keine Ausnahmen"}</p>
-            `)
-        }
-    }).addTo(themaLayer.badeseen);
-}
-showLakes("");*/
-
-//Funktion implementieren für die GPX-Tracks
-/*async function gpxTracks(gpx) {
-    let routenFarben = {//Gelbtöne von https://www.farb-tabelle.de/de/farbtabelle.htm#yellow
-        "Ybbstalradweg": "#EEDD82", //BlanchedAlmond 
-        "Triestingau-Radweg": "#B8860B", //DarkGoldenrod
-        "Triesting-Gölsental-Radweg": "#FFB90F", //DarkGoldenrod1
-        "Traisentalweg": "#FFFACD", //LemonChiffon
-        "Thayarunde Waldviertel": "#FFEBCD", //LightGo.denrod
-        "Piestingtal-Radweg": "#EEEE00", //yellow2
-        "Kamp-Thaya-March-Radroute": "#FFD700", //gold
-    };
-    let zuordnungLayer = {
-        "Ybbstalradweg": "themaLayer.kampThayaMarch",
-        "Piestingtal-Radweg": "themaLayer.piestingtal",
-        "Thayarunde": "themaLayer.thayarunde",
-        "Traisental-Radweg": "themaLayer.traisental",
-        "Triesting-Gölsental-Radweg": "themaLayer.triestingGoelsental",
-        "Triestingau-Radweg": "themaLayer.triestingau",
-        "Ybbstal-Radweg": "themaLayer.ybbstal"
-    };
-    new L.GPX(gpx, {
-        polyline_options: function (feature) {
-            return {
-                color: routenFarben[feature.properties.Name],//der Zugriff auf die Farben funktioniert noch nicht!
-                opacity: 0.75,
-                weight: 3
-            };
-        },
-        marker_options: {
-            startIconUrl: false,
-            endIconUrl: false,
-            shadowUrl: false,
-            wptIconUrls: false
-        },
-    }).on('loaded', function (e) {
-        //   map.fitBounds(e.target.getBounds());
-    }).addTo(themaLayer);//hier noch den richtigen Themalayern zuordnen!
-}
-
-gpxTracks("data/niederoesterreich/kamp_thaya_march.gpx");
-gpxTracks("data/niederoesterreich/piestingtal.gpx");
-gpxTracks("data/niederoesterreich/thayarunde.gpx");
-gpxTracks("data/niederoesterreich/traisentalweg.gpx");
-gpxTracks("data/niederoesterreich/triesting_goelsental.gpx");
-gpxTracks("data/niederoesterreich/triestinggau.gpx");
-gpxTracks("data/niederoesterreich/ybbstalradweg.gpx");
-*/
-
-//Farben und Themalayer zuordnen! Popups für die Tracks erstellen bei Klick (wie in start repo)
-
-
