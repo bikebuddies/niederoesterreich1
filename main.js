@@ -22,7 +22,8 @@ let themaLayer = {
     triestingau: L.featureGroup(),//https://www.outdooractive.com/r/1366729
     ybbstal: L.featureGroup(),//https://www.outdooractive.com/r/10654578
     forecast: L.featureGroup(),
-    badeseen: L.featureGroup()
+    badeseen: L.featureGroup(),
+    eisdielen: L.featureGroup()
 };
 
 // Hintergrundlayer 
@@ -39,7 +40,8 @@ let layerControl = L.control.layers({
     "Triestingau-Radweg": themaLayer.triestingau.addTo(map),
     "Ybbstal-Radweg": themaLayer.ybbstal.addTo(map),
     "Wettervorhersage MET Norway": themaLayer.forecast,
-    "Badeseen": themaLayer.badeseen
+    "Badeseen": themaLayer.badeseen,
+    "Eisdielen": themaLayer.eisdielen,
 }).addTo(map);
 
 // Layer beim Besuch auf der Seite ausklappen
@@ -384,6 +386,48 @@ for (let badeseen of BADESEEN) {
     })
         .addTo(themaLayer.badeseen)
         .bindPopup(`<b>${badeseen.title}</b> <br>
+    `)
+};
+
+//Eisdielen
+const EISDIELEN = [
+    {
+        title: "Muratti Gelateria",
+        lat: 47.92887177060042, 
+        lng: 16.216587179951677,
+    },
+    {
+        title: "Eisdiele Papa Luigi",
+        lat: 48.05055989884008, 
+        lng: 15.612404277191253,
+    },
+    {
+        title: "Eiscafé Venezia",
+        lat: 48.12287154575264,
+        lng: 14.872194820122328,
+    },
+    {
+        title: "Eissalon Daniel",
+        lat: 48.147208935083064, 
+        lng: 16.940528019026875,
+    },
+    {
+        title: "Eissalon Mazzer Renzo",
+        lat: 48.41104791919906,
+        lng: 15.602391376465306,
+    }
+];
+
+for (let eisdielen of EISDIELEN) {
+    L.marker([eisdielen.lat, eisdielen.lng], {
+        icon: L.icon({
+            iconUrl: `icons/icecream.png`,
+            popupAnchor: [0, -37],
+            iconAnchor: [16, 37],
+        })
+    })
+        .addTo(themaLayer.eisdielen)
+        .bindPopup(`<b>${eisdielen.title}</b> <br>
     `)
 };
 
